@@ -88,13 +88,13 @@ const ShopNavbar = () => {
               <Link to="/about" className="nav-items nav-about">
                 ABOUT THIS PROJECT
               </Link>
-              <Link to="/products" className="text-white nav-items">
+              <Link to="/products" className=" nav-items">
                 SHOP
               </Link>
               <a
                 href="https://equalvision-admin.vercel.app"
                 target="_blank"
-                className="text-white nav-items "
+                className=" nav-items "
               >
                 DASHBOARD
               </a>

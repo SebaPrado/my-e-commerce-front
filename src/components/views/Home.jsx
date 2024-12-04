@@ -83,13 +83,13 @@ function Home() {
           {" "}
           New Releases{" "}
         </h2>
-        <div  className="newreleasesText">
-        <p>
-          Discover the freshest sounds and timeless classics on vinyl! From
-          groundbreaking indie anthems to the smoothest jazz and the
-          hardest-hitting rock, our New Releases section is packed with albums
-          that will ignite your passion for music.
-        </p>
+        <div className="newreleasesText">
+          <p>
+            Discover the freshest sounds and timeless classics on vinyl! From
+            groundbreaking indie anthems to the smoothest jazz and the
+            hardest-hitting rock, our New Releases section is packed with albums
+            that will ignite your passion for music.
+          </p>
         </div>
 
         <div className="container py-1 ">
@@ -151,8 +151,23 @@ function Home() {
       <section>
         <h2 className="text-center space-letter  newReleasesH2">Our story</h2>
         <div className="ourStoryContainer">
-          <div className="ourStoryText"></div>
-          <div className="ourStoryImage"></div>
+          <div className="ourStoryText">
+          <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+              ipsa perspiciatis molestias accusantium recusandae, quidem
+              accusamus debitis aperiam laboriosam culpa aspernatur, ipsum ullam
+              ab magnam sint explicabo commodi? Amet, facere!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+              at fugiat nihil quidem aperiam qui veritatis impedit? Laudantium
+              nulla blanditiis culpa et voluptatum, ratione nisi, vero pariatur
+              dolore eum iusto?
+            </p>
+          </div>
+          <div className="ourStoryImage">
+           
+          </div>
         </div>
       </section>
       {/* =====================================     ↑ ↑ ↑ ↑ ↑   relleno        ↑ ↑ ↑ ↑ ↑    ====================================== */}
