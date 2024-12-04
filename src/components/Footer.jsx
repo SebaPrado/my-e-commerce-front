@@ -41,20 +41,20 @@ function Footer() {
                 to="/about"
                 className="text-white fw-bold text-decoration-none me-4"
               >
-                CONTACT
+                Contact
               </Link>
 
               <Link
                 to="/products"
                 className="text-white fw-bold text-decoration-none me-4"
               >
-                SHOP
+                Products
               </Link>
               <Link
                 to=""
                 className="text-white fw-bold text-decoration-none footer-icons-left"
               >
-                DASHBOARD
+                Dashboard
               </Link>
             </div>
           </div>

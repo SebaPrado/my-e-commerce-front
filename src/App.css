@@ -1,7 +1,7 @@
 /* ... código existente ... */
 
 :root {
-  --color1: #e9c46a; /* Color 1 */
+  --color1: rgb(233, 196, 106); /* Color 1 */
   --color2: #2a9d8f; /* Color 2 */
   --color3: #264653; /* Color 3 */
   --color4: #f4a261; /* Color 4 */
@@ -757,12 +757,12 @@
 }
 
 .glass-black {
-  background:rgba(38, 70, 83, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(213, 213, 213, 0.37);
+  background:rgba(233, 197, 106, 0.411);
+  box-shadow: 0 8px 32px 0 rgba(31, 31, 49, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 2px solid rgba(233, 236, 181, 0.219);
 }
 
 .glass {
@@ -1003,6 +1003,7 @@
 .about-cards {
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  min-height: 700px;
 }
 
 .offcanvas {
@@ -1441,6 +1442,13 @@
 
 .card-img-top {
   box-shadow: 2px 1px 10px rgb(90, 87, 84);
+  /* border: red 2px solid; */
+  height: 400px;
+
+}
+
+.card-body{
+  background-color: rgb(233, 196, 106, 0.2) ;
 }
 
 @media (max-width: 991px) {
@@ -1622,9 +1630,15 @@
 }
 
 .ourStoryText{
-  width: 40%;
+  width: 50%;
   /* background-color: #6a6e33; */
   /* border: red 1px solid; */
+}
+.ourStoryText p {
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 25px;
+  line-height: 35px;
 }
 .ourStoryImage {
   width: 50%;
@@ -1638,12 +1652,19 @@
 }
 
 @media (max-width: 768px) {
-  .ourStoryText,
   .ourStoryImage {
-    width: 100%;
+    width: 80%;
+    height: 400px;
+    order: 1;
+  }
+  .ourStoryText{
+    order: 2;
+    margin-top: 50px;
+    width: 80%;
   }
   .ourStoryContainer{
     padding: 30px !important;
+    justify-content: center;
   }
 }
 

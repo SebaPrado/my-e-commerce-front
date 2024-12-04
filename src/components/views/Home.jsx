@@ -146,36 +146,43 @@ function Home() {
         <hr />
       </div>
 
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    relleno     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section>
-        <h2 className="text-center space-letter  newReleasesH2">Our story</h2>
+        <h2 className="text-center space-letter  newReleasesH2">Echoes Through Time</h2>
         <div className="ourStoryContainer">
           <div className="ourStoryText">
-          <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-              ipsa perspiciatis molestias accusantium recusandae, quidem
-              accusamus debitis aperiam laboriosam culpa aspernatur, ipsum ullam
-              ab magnam sint explicabo commodi? Amet, facere!
-            </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
-              at fugiat nihil quidem aperiam qui veritatis impedit? Laudantium
-              nulla blanditiis culpa et voluptatum, ratione nisi, vero pariatur
-              dolore eum iusto?
+              Established in an era when melodies flowed not through wires but
+              hearts, our store has been a sanctuary for the vinyl enthusiast
+              since its humble beginnings. Beneath the warm glow of gaslit
+              lamps, music lovers would gather to peruse shelves stacked high
+              with records that whispered tales of passion, rebellion, and
+              romance. Here, the air hums with nostalgia, as each groove carries
+              the soul of an artist long past, awaiting discovery anew.
+            </p>{" "}
+            <p>
+              Through the decades, as trends have come and gone, our mission
+              remains steadfast: to preserve the art of analog sound. Within
+              these walls lies a treasure trove of history, from the crackling
+              blues that defined a generation to the symphonies that stirred
+              hearts worldwide. For us, every vinyl is not just a product—it is
+              a story waiting to be told, a memory to be made, and a piece of
+              history to be cherished.
             </p>
           </div>
-          <div className="ourStoryImage">
-           
-          </div>
+          <div className="ourStoryImage"></div>
+        </div>
+        <div className="container mt-5">
+          <hr />
         </div>
       </section>
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑   relleno        ↑ ↑ ↑ ↑ ↑    ====================================== */}
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section id="shop-by-category" className="mt-5 mb-5 ">
-        <h2 className="text-center space-letter mb-3">SHOP BY CATEGORY</h2>
+        <h2 className="text-center space-letter mb-3">Explore categories</h2>
 
         <div className="container">
           <Swiper
@@ -234,6 +241,42 @@ function Home() {
       <div className="container mt-5">
         <hr />
       </div>
+
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+
+      <section>
+        <h2 className="text-center space-letter  newReleasesH2">
+          The Listening Room
+        </h2>
+        <div className="ourStoryContainer">
+          <div className="ourStoryText">
+            <p>
+              Beyond the storefront lies a secret haven—the Listening Room,
+              where the magic of vinyl truly comes alive. With rich wooden
+              panels and plush chairs worn soft by decades of visitors, this
+              space invites patrons to escape the chaos of the modern world and
+              lose themselves in the warmth of analog sound. Each needle drop is
+              a ceremony, every spin a journey through time, as melodies from
+              bygone eras fill the air.
+            </p>{" "}
+            <p>
+              The Listening Room has witnessed countless moments of discovery: a
+              young collector’s first encounter with jazz, a couple swaying to
+              the croon of an old love ballad, or a seasoned enthusiast
+              rekindling their connection to a forgotten favorite. Here, the
+              connection to music transcends the ordinary, transforming each
+              visit into an intimate encounter with the heart and soul of sound.
+              Step inside, and let the vinyl guide you home.
+            </p>
+          </div>
+          <div className="ourStoryImage"></div>
+        </div>
+        <div className="container mt-5">
+          <hr />
+        </div>
+      </section>
+
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑   relleno        ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    News     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 

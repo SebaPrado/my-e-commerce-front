@@ -86,17 +86,17 @@ const ShopNavbar = () => {
           <Navbar.Collapse id="navbarNav" className="text-white">
             <Nav className="ms-auto text-white">
               <Link to="/about" className="nav-items nav-about">
-                ABOUT THIS PROJECT
+                About this project
               </Link>
               <Link to="/products" className=" nav-items">
-                SHOP
+                Products
               </Link>
               <a
                 href="https://equalvision-admin.vercel.app"
                 target="_blank"
                 className=" nav-items "
               >
-                DASHBOARD
+                Dashboard
               </a>
               <div className=" icon-p">
                 <div className="mt-1">
