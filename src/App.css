@@ -32,6 +32,7 @@
   .snap-section {
     height: 100%;
     scroll-snap-align: none;
+    width: 100vw;
   }
 
   .last-snap-item {
@@ -190,7 +191,7 @@
 .nvbar {
   background-image: url(https://equalvision.com/cdn/shop/files/ao94ctby.png?v=1599576069);
   padding: 0 20px;
-  width: 100%;
+  /* width: 100%; */
   z-index: 2;
 }
 
@@ -768,6 +769,10 @@
   margin-top: 50px;
   display: flex;
   justify-content: start;
+}
+
+.product{
+  width: 80%;
 }
 
 .scroll {
@@ -1480,7 +1485,7 @@
 }
 
 .nav-about {
-  color: rgb(183, 183, 106);
+  color: rgb(254, 199, 111) ;
 }
 
 .nav-about::after {
@@ -1490,8 +1495,9 @@
   bottom: 0px;
   width: 0;
   height: 2px;
-  background-color: rgb(183, 183, 106);
-  transition: width 0.4s;
+  background-color:   rgb(254, 199, 111) ;
+
+  transition: width 0.6s;
 }
 
 .box_empty_cart {
@@ -1586,4 +1592,62 @@
 
 .product-info-div {
   padding-right: 20%;
+}
+
+.newReleasesH2{
+  margin-top: 8rem;
+}
+
+/* Our story section */
+
+.ourStoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: white; */
+  min-height: 500px;
+  padding: 45px;
+}
+
+.ourStoryText{
+  width: 40%;
+  /* background-color: #6a6e33; */
+  /* border: red 1px solid; */
+}
+.ourStoryImage {
+  width: 50%;
+  /* padding: 5px  5px   5px 5px; */
+  border-radius: 10px;
+  /* border: red 1px solid; */
+  background-image: url('/img/music.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .ourStoryText,
+  .ourStoryImage {
+    width: 100%;
+  }
+  .ourStoryContainer{
+    padding: 30px !important;
+  }
+}
+
+
+/*   ==========          New releases     ==========  */
+
+.newreleasesText{
+  display: flex;
+ justify-content: center;
+  margin-top: 2.3rem;
+  text-align: center;
+  width: 100%;
+}
+.newreleasesText p {
+  width: 70%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 32px;
+
 }

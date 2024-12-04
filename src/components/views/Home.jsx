@@ -55,6 +55,8 @@ function Home() {
         <button className="button-to-about">ABOUT THIS PROJECT</button>
       </Link>
 
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Hero     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+
       <div className="video-player-container">
         <video
           src={video}
@@ -72,19 +74,35 @@ function Home() {
         ></img>
       </div>
 
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑    Hero     ↑ ↑ ↑ ↑ ↑    ====================================== */}
+
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
+
       <section>
-        <h2 className="text-center space-letter mt-5 ">FEATURED PRODUCTS</h2>
-        <div className="container py-1">
+        <h2 className="text-center space-letter  newReleasesH2">
+          {" "}
+          New Releases{" "}
+        </h2>
+        <div  className="newreleasesText">
+        <p>
+          Discover the freshest sounds and timeless classics on vinyl! From
+          groundbreaking indie anthems to the smoothest jazz and the
+          hardest-hitting rock, our New Releases section is packed with albums
+          that will ignite your passion for music.
+        </p>
+        </div>
+
+        <div className="container py-1 ">
           <Swiper
             breakpoints={{
               0: {
                 slidesPerView: 1,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
               },
               1000: {
-                slidesPerView: 3,
+                slidesPerView: 5,
               },
             }}
             effect={"coverflow"}
@@ -112,7 +130,7 @@ function Home() {
               .filter((product) => product.featured === true)
               .map((product) => (
                 <SwiperSlide
-                  className="swiperSlide mb-5 very-small-hover glass-black"
+                  className="swiperSlide mb-5 very-small-hover glass-black "
                   key={product.id}
                 >
                   <Product product={product} featured={true} />
@@ -122,9 +140,24 @@ function Home() {
         </div>
       </section>
 
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑    New Releases       ↑ ↑ ↑ ↑ ↑    ====================================== */}
+
       <div className="container mt-5">
         <hr />
       </div>
+
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    relleno     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+
+      <section>
+        <h2 className="text-center space-letter  newReleasesH2">Our story</h2>
+        <div className="ourStoryContainer">
+          <div className="ourStoryText"></div>
+          <div className="ourStoryImage"></div>
+        </div>
+      </section>
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑   relleno        ↑ ↑ ↑ ↑ ↑    ====================================== */}
+
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section id="shop-by-category" className="mt-5 mb-5 ">
         <h2 className="text-center space-letter mb-3">SHOP BY CATEGORY</h2>
@@ -181,9 +214,13 @@ function Home() {
         </div>
       </section>
 
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
+
       <div className="container mt-5">
         <hr />
       </div>
+
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    News     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section id="news" className="mt-5 mb-5">
         <h2 className="text-center space-letter mb-3">NEWS</h2>
@@ -273,6 +310,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑    News     ↑ ↑ ↑ ↑ ↑    ====================================== */}
     </>
   );
 }

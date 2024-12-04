@@ -17,6 +17,7 @@ function Footer() {
   };
 
   return (
+    // <div style={{ width: '100vw', backgroundColor: '#000', color: '#fff' }}> 
     <footer className="bg-dark p-3 snap-section ">
       <div className="container">
         <div className="row d-flex justify-content-between align-items-center p-2">
@@ -28,11 +29,11 @@ function Footer() {
             />
           </div>
 
-          <div className="d-none d-lg-flex col-lg-2 justify-content-center">
+          {/* <div className="d-none d-lg-flex col-lg-2 justify-content-center">
             <FaCcVisa size="2rem" className="text-white me-2" />
             <FaCcMastercard size="2rem" className="text-white me-2" />
             <FaCcPaypal size="2rem" className="text-white" />
-          </div>
+          </div> */}
 
           <div className="d-none d-lg-flex col-lg-4 justify-content-center">
             <div className="">
@@ -94,6 +95,7 @@ function Footer() {
         </div>
       </div>
     </footer>
+    // </div>
   );
 }
 
