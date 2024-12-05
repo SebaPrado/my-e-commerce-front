@@ -1592,8 +1592,8 @@
 .flexible-container-section4-home {
   display: flex;
   flex-wrap: wrap; /* Asegura que los elementos se envuelvan cuando no haya suficiente espacio */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: center;
+  align-items: center; 
 }
 
 .date-font-size {
@@ -1636,25 +1636,19 @@
   margin-bottom: 5rem;
 }
 
-/* Our story section */
 
 .ourStoryContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* background-color: white; */
   min-height: 500px;
   margin-bottom: 5rem;
-
-  /* padding: 45px; */
 }
 
 .ourStoryText {
   width: 45%;
   padding-right: 65px;
-
-  /* background-color: #6a6e33; */
-  /* border: red 1px solid; */
+  border: red 1px solid;
 }
 .ourStoryText p {
   padding-bottom: 30px;
@@ -1678,7 +1672,7 @@
     width: 90%;
     height: 300px;
     order: -1;
-    /* border: yellow 2px solid; */
+    border: yellow 2px solid;
   }
   .ourStoryText {
     order: 2;
@@ -1689,7 +1683,7 @@
   }
 }
 
-/* de 575 a 576 px de width sucede el problema */
+
 @media (width <= 769px) {
   .echoesImage {
     width: 100%;
@@ -1755,17 +1749,16 @@
 
 .roomContainer {
   position: relative;
-  width: 53%; /* Ocupa el 50% de la pantalla */
+  width: 53%; 
   overflow: hidden; /* Oculta el desbordamiento */
-  /* padding-left: 75px;
-  padding-right: 75px; */
+ 
 }
 
 .roomContainer1 {
   position: absolute;
   left: 10%;
   top: 0;
-  z-index: 1; /* Z-index para el orden de apilamiento */
+  z-index: 1;
   background-image: url("/img/1.jpg");
   background-size: cover;
   width: 75%;
@@ -1774,10 +1767,10 @@
 }
 .roomContainer2 {
   position: absolute;
-  top: 13%; /* Desplazamiento hacia abajo */
-  left: 10%; /* Desplazamiento hacia la derecha */
-  width: 76%; /* Ancho reducido */
-  z-index: 2; /* Z-index para el orden de apilamiento */
+  top: 13%; /* ↓ abajo */
+  left: 10%; /* => derecha */
+  width: 76%; 
+  z-index: 2;
   background-image: url("/img/3.jpg");
   background-size: cover;
   height: 60%;
@@ -1786,10 +1779,10 @@
 
 .roomContainer3 {
   position: absolute;
-  top: 35%; /* Desplazamiento hacia abajo */
-  left: 12%; /* Desplazamiento hacia la derecha */
-  width: 72%; /* Ancho reducido */
-  z-index: 1; /* Z-index para el orden de apilamiento */
+   top: 35%; /* ↓ abajo */
+  left: 12%; /* => derecha */
+  width: 72%; 
+  z-index: 1; 
   background-image: url("/img/1.jpg");
   background-size: cover;
   height: 50%;
@@ -1812,14 +1805,13 @@
   .roomContainer {
     width: 70%;
     height: 500px;
-    padding: 0 0px; /* Agrega un poco de padding para que no esté pegado a los bordes */
     box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
     background-size: contain;
     order: -1;
   }
   .roomText {
     width: 85%;
-    /* border: skyblue 2px solid; */
+    border: skyblue 2px solid;
     text-align: center;
     line-height: 29px;
     padding-left: 5px;
@@ -1842,7 +1834,7 @@
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
-    /* border: greenyellow 2px solid; */
+    border: greenyellow 2px solid;
   }
 }
 
@@ -1850,10 +1842,10 @@
   .roomContainer {
     width: 90%;
     height: 240px;
-    padding: 0 20px; /* Agrega un poco de padding para que no esté pegado a los bordes */
+    padding: 0 20px; 
     box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
     background-size: cover;
-    background-position: center; /* Centra la imagen de fondo */
+    background-position: center; 
     order: -1;
   }
   .roomText {
