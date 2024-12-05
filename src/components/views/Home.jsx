@@ -132,8 +132,8 @@ function Home() {
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section className="p-4">
-        <div className="tituloEchoesThroughTime" ref={projectRef}>
+      <section className="">
+        <div ref={projectRef}>
           <h2
             className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
               isVisible[0] ? "slide-left" : ""
@@ -166,24 +166,22 @@ function Home() {
           </div>
           <div className="ourStoryImage"></div>
         </div>
-        <div className="container mt-5">
-          <hr />
-        </div>
       </section>
       {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
-
+      <div className="container">
+        <hr />
+      </div>
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section>
-        <div className="tituloNewReleases" ref={projectRef}>
+        <div className=" mb-5 swiperSlide" ref={projectRef}>
           <h2
-            className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
+            className={`text-center space-letter newReleasesH2 ${
               isVisible[1] ? "slide-left" : ""
             }`}
             ref={titleRefs[1]}
           >
-            {" "}
-            New Releases{" "}
+            New Releases
           </h2>
         </div>
         <div className="newreleasesText">
@@ -195,11 +193,11 @@ function Home() {
           </p>
         </div>
 
-        <div className="container py-3 ">
+        <div className="container  py-3 ">
           <Swiper
             breakpoints={{
               0: {
-                slidesPerView: 3,
+                slidesPerView: 1,
               },
               768: {
                 slidesPerView: 3,
@@ -227,13 +225,13 @@ function Home() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className="mySwiper pb-5"
+            className="mySwiper pb-5 borde "
           >
             {productList
               .filter((product) => product.featured === true)
               .map((product) => (
                 <SwiperSlide
-                  className="swiperSlide my-5 very-small-hover newReleases "
+                  className=" my-5 very-small-hover newReleases "
                   key={product.id}
                 >
                   <Product product={product} featured={true} />
@@ -251,7 +249,7 @@ function Home() {
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section id="shop-by-category" className="mt-5 mb-5 ">
+      {/* <section id="shop-by-category" className="mt-5 mb-5 ">
         <h2
           className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime `}
           ref={titleRefs[2]}
@@ -309,13 +307,13 @@ function Home() {
             ))}
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
-      <div className="container mt-5">
+      {/* <div className="container mt-5">
         <hr />
-      </div>
+      </div> */}
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
@@ -353,7 +351,7 @@ function Home() {
             <div className="roomContainer2"></div>
             <div
               className="roomContainer3"
-              style={{ transform: `translateX(${offset+10}px)` }}
+              style={{ transform: `translateX(${offset + 10}px)` }}
             ></div>
           </div>
         </div>
