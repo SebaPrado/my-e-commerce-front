@@ -90,7 +90,7 @@ function Home() {
       if (titleRefs[3].current) {
         const rect = titleRefs[3].current.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {
-          const newOffset = Math.min(53, (window.innerHeight - rect.top) / 10); // Calcular desplazamiento
+          const newOffset = Math.min(55, (window.innerHeight - rect.top) / 10); // Calcular desplazamiento
           setOffset(newOffset); // Actualizar el estado del desplazamiento
         } else {
         }
@@ -195,11 +195,11 @@ function Home() {
           </p>
         </div>
 
-        <div className="container py-1 ">
+        <div className="container py-3 ">
           <Swiper
             breakpoints={{
               0: {
-                slidesPerView: 1,
+                slidesPerView: 3,
               },
               768: {
                 slidesPerView: 3,
@@ -233,7 +233,7 @@ function Home() {
               .filter((product) => product.featured === true)
               .map((product) => (
                 <SwiperSlide
-                  className="swiperSlide mb-5 very-small-hover newReleases "
+                  className="swiperSlide my-5 very-small-hover newReleases "
                   key={product.id}
                 >
                   <Product product={product} featured={true} />
@@ -334,14 +334,12 @@ function Home() {
               panels and plush chairs worn soft by decades of visitors, this
               space invites patrons to escape the chaos of the modern world and
               lose themselves in the warmth of analog sound. Each needle drop is
-              a ceremony, every spin a journey through time, as melodies from
-              bygone eras fill the air.
+              a ceremony as every spin a journey through time.
             </p>{" "}
             <p>
               The Listening Room has witnessed countless moments of discovery: a
-              young collector’s first encounter with jazz, a couple swaying to
-              the croon of an old love ballad, or a seasoned enthusiast
-              rekindling their connection to a forgotten favorite. Here, the
+              young collector’s first encounter with jazz. A seasoned enthusiast
+              rekindling their connection to a forgotten favorite... Here, the
               connection to music transcends the ordinary, transforming each
               visit into an intimate encounter with the heart and soul of sound.
               Step inside, and let the vinyl guide you home.

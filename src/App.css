@@ -1228,7 +1228,7 @@
 }
 
 .product-featured-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .productContainer {
   width: 100%;
@@ -1639,7 +1639,7 @@
 }
 
 .ourStoryText {
-  width: 47%;
+  width: 45%;
   padding-right: 65px;
 
   /* background-color: #6a6e33; */
@@ -1651,7 +1651,7 @@
   line-height: 35px;
 }
 .ourStoryImage {
-  width: 54%;
+  width: 55%;
   /* padding: 5px  5px   5px 5px; */
   border-radius: 10px;
   /* border: red 1px solid; */
@@ -1701,7 +1701,7 @@
 }
 @keyframes slide-left {
   0% {
-    transform: translateX(-110px);
+    transform: translateX(-100px);
     opacity: 0%;
   }
   50% {
@@ -1719,13 +1719,13 @@
 
 .roomContainer {
   position: relative;
-  width: 50%; /* Ocupa el 50% de la pantalla */
+  width: 54%; /* Ocupa el 50% de la pantalla */
   overflow: hidden; /* Oculta el desbordamiento */
 }
 
 .roomContainer1 {
   position: absolute;
-  left: 50px;
+  left: 55px;
   top: 0; 
   z-index: 1; /* Z-index para el orden de apilamiento */
   background-image: url("/img/1.jpg");
@@ -1738,8 +1738,8 @@
 .roomContainer2 {
   position: absolute;
 
-  top: 15%; /* Desplazamiento hacia abajo */
-  left: 9%; /* Desplazamiento hacia la derecha */
+  top: 13%; /* Desplazamiento hacia abajo */
+  left: 13%; /* Desplazamiento hacia la derecha */
   width: 76%; /* Ancho reducido */
   z-index: 2; /* Z-index para el orden de apilamiento */
   background-image: url("/img/3.jpg");
@@ -1751,7 +1751,7 @@
 .roomContainer3 {
   position: absolute;
 
-  top: 40%; /* Desplazamiento hacia abajo */
+  top: 35%; /* Desplazamiento hacia abajo */
   left: 17%; /* Desplazamiento hacia la derecha */
   width: 72%; /* Ancho reducido */
   z-index: 1; /* Z-index para el orden de apilamiento */
