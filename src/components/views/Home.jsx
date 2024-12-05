@@ -90,10 +90,9 @@ function Home() {
       if (titleRefs[3].current) {
         const rect = titleRefs[3].current.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {
-          const newOffset = Math.min(50, (window.innerHeight - rect.top) / 10); // Calcular desplazamiento
+          const newOffset = Math.min(53, (window.innerHeight - rect.top) / 10); // Calcular desplazamiento
           setOffset(newOffset); // Actualizar el estado del desplazamiento
         } else {
-          // setOffset((prev) => (prev > 1 ? prev - 2 : -1)); // Reducir gradualmente el offset
         }
       }
     };
@@ -254,9 +253,7 @@ function Home() {
 
       <section id="shop-by-category" className="mt-5 mb-5 ">
         <h2
-          className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
-            isVisible[2] ? "slide-left" : ""
-          }`}
+          className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime `}
           ref={titleRefs[2]}
         >
           Shop by Category
@@ -323,7 +320,10 @@ function Home() {
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section>
-        <h2 className="text-center space-letter newReleasesH2 tituloEchoesThroughTime ">
+        <h2
+          className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime `}
+          ref={titleRefs[3]}
+        >
           The Listening Room
         </h2>
         <div className="ourStoryContainer">
@@ -353,7 +353,10 @@ function Home() {
               style={{ transform: `translateX(-${offset}px)` }}
             ></div>
             <div className="roomContainer2"></div>
-            <div className="roomContainer3"></div>
+            <div
+              className="roomContainer3"
+              style={{ transform: `translateX(${offset+10}px)` }}
+            ></div>
           </div>
         </div>
         <div className="container mt-5">

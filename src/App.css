@@ -1635,10 +1635,11 @@
   /* background-color: white; */
   min-height: 500px;
   padding: 45px;
+
 }
 
 .ourStoryText {
-  width: 50%;
+  width: 47%;
   padding-right: 65px;
 
   /* background-color: #6a6e33; */
@@ -1650,7 +1651,7 @@
   line-height: 35px;
 }
 .ourStoryImage {
-  width: 50%;
+  width: 54%;
   /* padding: 5px  5px   5px 5px; */
   border-radius: 10px;
   /* border: red 1px solid; */
@@ -1738,8 +1739,8 @@
   position: absolute;
 
   top: 15%; /* Desplazamiento hacia abajo */
-  left: 10%; /* Desplazamiento hacia la derecha */
-  width: 80%; /* Ancho reducido */
+  left: 9%; /* Desplazamiento hacia la derecha */
+  width: 76%; /* Ancho reducido */
   z-index: 2; /* Z-index para el orden de apilamiento */
   background-image: url("/img/3.jpg");
   background-size: cover;
@@ -1750,13 +1751,13 @@
 .roomContainer3 {
   position: absolute;
 
-  top: 60%; /* Desplazamiento hacia abajo */
-  left: 40%; /* Desplazamiento hacia la derecha */
-  width: 60%; /* Ancho reducido */
+  top: 40%; /* Desplazamiento hacia abajo */
+  left: 17%; /* Desplazamiento hacia la derecha */
+  width: 72%; /* Ancho reducido */
   z-index: 1; /* Z-index para el orden de apilamiento */
   background-image: url("/img/1.jpg");
   background-size: cover;
-  height: 39%;
+  height: 50%;
   border-radius: 3px;
 
 }
