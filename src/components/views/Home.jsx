@@ -135,7 +135,7 @@ function Home() {
       <section className="">
         <div ref={projectRef}>
           <h2
-            className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
+            className={` px-1 text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
               isVisible[0] ? "slide-left" : ""
             }`}
             ref={titleRefs[0]}
@@ -164,7 +164,7 @@ function Home() {
               history to be cherished.
             </p>
           </div>
-          <div className="ourStoryImage"></div>
+          <div className="echoesImage"></div>
         </div>
       </section>
       {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
@@ -319,13 +319,13 @@ function Home() {
 
       <section>
         <h2
-          className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime `}
+          className={`text-center space-letter newReleasesH2  `}
           ref={titleRefs[3]}
         >
           The Listening Room
         </h2>
         <div className="ourStoryContainer">
-          <div className="ourStoryText">
+          <div className="roomText">
             <p>
               Beyond the storefront lies a secret haven—the Listening Room,
               where the magic of vinyl truly comes alive. With rich wooden

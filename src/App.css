@@ -772,9 +772,6 @@
     max-width: 260px; /* Limitar el ancho máximo al 100% */
     box-sizing: border-box; /* Asegurarse de que el padding y el border se incluyan en el ancho total */
   }
-  .newReleases {
-    /* border: yellow 2px solid; */
-  }
 }
 
 .glass {
@@ -1635,17 +1632,20 @@
 }
 
 .newReleasesH2 {
-  margin-top: 8rem;
-  margin-bottom: 3rem;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
 }
 
 /* Our story section */
 
 .ourStoryContainer {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   /* background-color: white; */
   min-height: 500px;
+  margin-bottom: 5rem;
+
   /* padding: 45px; */
 }
 
@@ -1662,49 +1662,53 @@
   line-height: 35px;
 }
 
-.ourStoryImage {
-  width: 55%;
+.echoesImage {
+  width: 50%;
   padding: 5px 5px 5px 5px;
   border-radius: 10px;
-  /* border: red 1px solid; */
+  border: red 2px solid;
   background-image: url("/img/music.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media (770px <= width <= 1200px) {
-  .ourStoryImage {
-    width: 100%;
-    height: 400px;
+@media (770px <= width <= 960px) {
+  .echoesImage {
+    width: 90%;
+    height: 300px;
     order: -1;
     /* border: yellow 2px solid; */
   }
   .ourStoryText {
     order: 2;
     margin-top: 50px;
-    padding-right: 0px;
+    padding-right: 45px;
+    padding-left: 29px;
     width: 100%;
   }
 }
 
 /* de 575 a 576 px de width sucede el problema */
 @media (width <= 769px) {
-  .ourStoryImage {
+  .echoesImage {
     width: 100%;
     height: 300px;
     margin-bottom: 40px;
     order: -1;
-    /* border: green 2px solid; */
+    border: rgb(9, 0, 128) 2px solid;
   }
   .ourStoryText {
     margin-top: 0px;
-    padding-right: 0px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-left: -25px !important;
     width: 100%;
   }
   .ourStoryContainer {
     padding: 30px !important;
     justify-content: center;
+    margin-bottom: 0.1rem !important;
   }
   .newReleasesH2 {
     margin-top: 65px;
@@ -1751,26 +1755,27 @@
 
 .roomContainer {
   position: relative;
-  width: 54%; /* Ocupa el 50% de la pantalla */
+  width: 53%; /* Ocupa el 50% de la pantalla */
   overflow: hidden; /* Oculta el desbordamiento */
+  /* padding-left: 75px;
+  padding-right: 75px; */
 }
 
 .roomContainer1 {
   position: absolute;
-  left: 55px;
+  left: 10%;
   top: 0;
   z-index: 1; /* Z-index para el orden de apilamiento */
   background-image: url("/img/1.jpg");
   background-size: cover;
-  width: 80%;
+  width: 75%;
   height: 50%;
   border-radius: 3px;
 }
 .roomContainer2 {
   position: absolute;
-
   top: 13%; /* Desplazamiento hacia abajo */
-  left: 13%; /* Desplazamiento hacia la derecha */
+  left: 10%; /* Desplazamiento hacia la derecha */
   width: 76%; /* Ancho reducido */
   z-index: 2; /* Z-index para el orden de apilamiento */
   background-image: url("/img/3.jpg");
@@ -1781,9 +1786,8 @@
 
 .roomContainer3 {
   position: absolute;
-
   top: 35%; /* Desplazamiento hacia abajo */
-  left: 17%; /* Desplazamiento hacia la derecha */
+  left: 12%; /* Desplazamiento hacia la derecha */
   width: 72%; /* Ancho reducido */
   z-index: 1; /* Z-index para el orden de apilamiento */
   background-image: url("/img/1.jpg");
@@ -1793,6 +1797,66 @@
 }
 
 .swiperSlide {
-  max-width: 100%; /* Limitar el ancho máximo al 100% */
-  box-sizing: border-box; /* Asegurarse de que el padding y el border se incluyan en el ancho total */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.roomText {
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: start;
+  line-height: 32px;
+  width: 46%;
+}
+
+@media (max-width: 1200px) {
+  .roomContainer {
+    width: 70%;
+    height: 500px;
+    padding: 0 0px; /* Agrega un poco de padding para que no esté pegado a los bordes */
+    box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
+    background-size: contain;
+    order: -1;
+  }
+  .roomText {
+    width: 85%;
+    /* border: skyblue 2px solid; */
+    text-align: center;
+    line-height: 29px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .roomText p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .roomContainer {
+    width: 70%;
+    height: 500px;
+    box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
+    background-size: contain;
+    order: -1;
+  }
+  .roomText {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border: greenyellow 2px solid; */
+  }
+}
+
+@media (max-width: 580px) {
+  .roomContainer {
+    width: 90%;
+    height: 240px;
+    padding: 0 20px; /* Agrega un poco de padding para que no esté pegado a los bordes */
+    box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
+    background-size: cover;
+    background-position: center; /* Centra la imagen de fondo */
+    order: -1;
+  }
+  .roomText {
+    width: 100%;
+  }
 }
