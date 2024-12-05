@@ -57,6 +57,8 @@ function Home() {
   const projectRef = useRef(null);
   const [projectVisible, setProjectVisible] = useState(false); // Estado para visibilidad
 
+  const [offset, setOffset] = useState(0); // Estado para el desplazamiento del div
+
   useEffect(() => {
     const handleScroll = () => {
       titleRefs.forEach((ref, index) => {
@@ -64,8 +66,17 @@ function Home() {
           const rect = ref.current.getBoundingClientRect();
           setIsVisible((prev) => {
             const newVisibility = [...prev];
-            newVisibility[index] =
-              rect.top < window.innerHeight && rect.bottom > 0; // Verificar si está en vista
+            if (
+              index === 3 &&
+              !newVisibility[index] &&
+              rect.top < window.innerHeight &&
+              rect.bottom > 0
+            ) {
+              newVisibility[index] = true; // Solo se activa una vez para el título 3
+            } else if (index !== 3) {
+              newVisibility[index] =
+                rect.top < window.innerHeight && rect.bottom > 0; // Para los otros títulos
+            }
             return newVisibility;
           });
         }
@@ -74,7 +85,19 @@ function Home() {
         const rect = projectRef.current.getBoundingClientRect();
         setProjectVisible(rect.top < window.innerHeight && rect.bottom > 0); // Verificar si está en vista
       }
+
+      // Verificar si roomContainer1 está en vista
+      if (titleRefs[3].current) {
+        const rect = titleRefs[3].current.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const newOffset = Math.min(50, (window.innerHeight - rect.top) / 10); // Calcular desplazamiento
+          setOffset(newOffset); // Actualizar el estado del desplazamiento
+        } else {
+          // setOffset((prev) => (prev > 1 ? prev - 2 : -1)); // Reducir gradualmente el offset
+        }
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -242,7 +265,7 @@ function Home() {
         <div className="container">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            spaceBetween={5}
+            spaceBetween={1}
             slidesPerView={3}
             breakpoints={{
               0: {
@@ -255,14 +278,14 @@ function Home() {
                 slidesPerView: 3,
               },
             }}
-            loop={false}
+            loop={true}
             autoplay={{
-              delay: 2000,
+              delay: 7000,
               disableOnInteraction: false,
             }}
-            speed={1000}
+            speed={7000}
             pagination={{ clickable: true }}
-            className=" pb-4"
+            className=" pb-3"
           >
             {categories.map((category) => (
               <SwiperSlide key={category.id}>
@@ -300,12 +323,7 @@ function Home() {
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section>
-        <h2
-          className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
-            isVisible[3] ? "slide-left" : ""
-          }`}
-          ref={titleRefs[3]}
-        >
+        <h2 className="text-center space-letter newReleasesH2 tituloEchoesThroughTime ">
           The Listening Room
         </h2>
         <div className="ourStoryContainer">
@@ -329,16 +347,13 @@ function Home() {
               Step inside, and let the vinyl guide you home.
             </p>
           </div>
-          <div className="roomContainer ourStoryImage">
-            <div className="roomContainer1">
-              <img src="/img/image1.webp" alt="Imagen 1" style={{ width: '100%', height: 'auto' }} />
-            </div>
-            <div className="roomContainer2">
-              <img src="/img/image2.webp" alt="Imagen 2" style={{ width: '100%', height: 'auto' }} />
-            </div>
-            <div className="roomContainer3">
-              <img src="/img/image3.webp" alt="Imagen 3" style={{ width: '100%', height: 'auto' }} />
-            </div>
+          <div className="roomContainer ">
+            <div
+              className="roomContainer1"
+              style={{ transform: `translateX(-${offset}px)` }}
+            ></div>
+            <div className="roomContainer2"></div>
+            <div className="roomContainer3"></div>
           </div>
         </div>
         <div className="container mt-5">

@@ -1724,23 +1724,27 @@
 
 .roomContainer1 {
   position: absolute;
-  top: 0; /* Posición inicial */
+  left: 50px;
+  top: 0; 
   z-index: 1; /* Z-index para el orden de apilamiento */
-  background-color: yellow;
-  width: 70%;
-  height: 40%;
-}
+  background-image: url("/img/1.jpg");
+  background-size: cover;
+  width: 80%;
+  height: 50%;
+  border-radius: 3px;
 
+}
 .roomContainer2 {
   position: absolute;
 
-  top: 30% ; /* Desplazamiento hacia abajo */
+  top: 15%; /* Desplazamiento hacia abajo */
   left: 10%; /* Desplazamiento hacia la derecha */
   width: 80%; /* Ancho reducido */
   z-index: 2; /* Z-index para el orden de apilamiento */
-  background-color: yellowgreen;
-  height: 40%;
-
+  background-image: url("/img/3.jpg");
+  background-size: cover;
+  height: 60%;
+  border-radius: 3px;
 }
 
 .roomContainer3 {
@@ -1750,7 +1754,9 @@
   left: 40%; /* Desplazamiento hacia la derecha */
   width: 60%; /* Ancho reducido */
   z-index: 1; /* Z-index para el orden de apilamiento */
-  background-color: green;
+  background-image: url("/img/1.jpg");
+  background-size: cover;
   height: 39%;
+  border-radius: 3px;
 
 }
