@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Product from "../Product";
@@ -49,6 +49,38 @@ function Home() {
     notify("This feature is not within the scope of the project.");
   };
 
+  // ==========================================================================   //
+
+  const titleRefs = [useRef(null), useRef(null), useRef(null), useRef(null)]; // Crear referencias para los títulos
+  const [isVisible, setIsVisible] = useState([false, false, false, false]); // Estado para visibilidad de los cuatro títulos
+
+  const projectRef = useRef(null);
+  const [projectVisible, setProjectVisible] = useState(false); // Estado para visibilidad
+
+  useEffect(() => {
+    const handleScroll = () => {
+      titleRefs.forEach((ref, index) => {
+        if (ref.current) {
+          const rect = ref.current.getBoundingClientRect();
+          setIsVisible((prev) => {
+            const newVisibility = [...prev];
+            newVisibility[index] =
+              rect.top < window.innerHeight && rect.bottom > 0; // Verificar si está en vista
+            return newVisibility;
+          });
+        }
+      });
+      if (projectRef.current) {
+        const rect = projectRef.current.getBoundingClientRect();
+        setProjectVisible(rect.top < window.innerHeight && rect.bottom > 0); // Verificar si está en vista
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // ==========================================================================   //
+
   return (
     <>
       <Link to="about">
@@ -76,13 +108,62 @@ function Home() {
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    Hero     ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+
+      <section className="p-4">
+        <div className="tituloEchoesThroughTime" ref={projectRef}>
+          <h2
+            className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
+              isVisible[0] ? "slide-left" : ""
+            }`}
+            ref={titleRefs[0]}
+          >
+            Echoes Through Time
+          </h2>
+        </div>
+        <div className="ourStoryContainer">
+          <div className="ourStoryText">
+            <p>
+              Established in an era when melodies flowed not through wires but
+              hearts, our store has been a sanctuary for the vinyl enthusiast
+              since its humble beginnings. Beneath the warm glow of gaslit
+              lamps, music lovers would gather to peruse shelves stacked high
+              with records that whispered tales of passion, rebellion, and
+              romance. Here, the air hums with nostalgia, as each groove carries
+              the soul of an artist long past, awaiting discovery anew.
+            </p>{" "}
+            <p>
+              Through the decades, as trends have come and gone, our mission
+              remains steadfast: to preserve the art of analog sound. Within
+              these walls lies a treasure trove of history, from the crackling
+              blues that defined a generation to the symphonies that stirred
+              hearts worldwide. For us, every vinyl is not just a product—it is
+              a story waiting to be told, a memory to be made, and a piece of
+              history to be cherished.
+            </p>
+          </div>
+          <div className="ourStoryImage"></div>
+        </div>
+        <div className="container mt-5">
+          <hr />
+        </div>
+      </section>
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
+
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section>
-        <h2 className="text-center space-letter  newReleasesH2">
-          {" "}
-          New Releases{" "}
-        </h2>
+        <div className="tituloNewReleases" ref={projectRef}>
+          <h2
+            className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
+              isVisible[1] ? "slide-left" : ""
+            }`}
+            ref={titleRefs[1]}
+          >
+            {" "}
+            New Releases{" "}
+          </h2>
+        </div>
         <div className="newreleasesText">
           <p>
             Discover the freshest sounds and timeless classics on vinyl! From
@@ -130,7 +211,7 @@ function Home() {
               .filter((product) => product.featured === true)
               .map((product) => (
                 <SwiperSlide
-                  className="swiperSlide mb-5 very-small-hover glass-black "
+                  className="swiperSlide mb-5 very-small-hover newReleases "
                   key={product.id}
                 >
                   <Product product={product} featured={true} />
@@ -146,43 +227,17 @@ function Home() {
         <hr />
       </div>
 
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
-
-      <section>
-        <h2 className="text-center space-letter  newReleasesH2">Echoes Through Time</h2>
-        <div className="ourStoryContainer">
-          <div className="ourStoryText">
-            <p>
-              Established in an era when melodies flowed not through wires but
-              hearts, our store has been a sanctuary for the vinyl enthusiast
-              since its humble beginnings. Beneath the warm glow of gaslit
-              lamps, music lovers would gather to peruse shelves stacked high
-              with records that whispered tales of passion, rebellion, and
-              romance. Here, the air hums with nostalgia, as each groove carries
-              the soul of an artist long past, awaiting discovery anew.
-            </p>{" "}
-            <p>
-              Through the decades, as trends have come and gone, our mission
-              remains steadfast: to preserve the art of analog sound. Within
-              these walls lies a treasure trove of history, from the crackling
-              blues that defined a generation to the symphonies that stirred
-              hearts worldwide. For us, every vinyl is not just a product—it is
-              a story waiting to be told, a memory to be made, and a piece of
-              history to be cherished.
-            </p>
-          </div>
-          <div className="ourStoryImage"></div>
-        </div>
-        <div className="container mt-5">
-          <hr />
-        </div>
-      </section>
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
-
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section id="shop-by-category" className="mt-5 mb-5 ">
-        <h2 className="text-center space-letter mb-3">Explore categories</h2>
+        <h2
+          className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
+            isVisible[2] ? "slide-left" : ""
+          }`}
+          ref={titleRefs[2]}
+        >
+          Shop by Category
+        </h2>
 
         <div className="container">
           <Swiper
@@ -245,7 +300,12 @@ function Home() {
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section>
-        <h2 className="text-center space-letter  newReleasesH2">
+        <h2
+          className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
+            isVisible[3] ? "slide-left" : ""
+          }`}
+          ref={titleRefs[3]}
+        >
           The Listening Room
         </h2>
         <div className="ourStoryContainer">
@@ -269,7 +329,17 @@ function Home() {
               Step inside, and let the vinyl guide you home.
             </p>
           </div>
-          <div className="ourStoryImage"></div>
+          <div className="roomContainer ourStoryImage">
+            <div className="roomContainer1">
+              <img src="/img/image1.webp" alt="Imagen 1" style={{ width: '100%', height: 'auto' }} />
+            </div>
+            <div className="roomContainer2">
+              <img src="/img/image2.webp" alt="Imagen 2" style={{ width: '100%', height: 'auto' }} />
+            </div>
+            <div className="roomContainer3">
+              <img src="/img/image3.webp" alt="Imagen 3" style={{ width: '100%', height: 'auto' }} />
+            </div>
+          </div>
         </div>
         <div className="container mt-5">
           <hr />

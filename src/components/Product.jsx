@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Product({ product }, featured) {
   return (
     <>
-      <div className="d-flex align-items-center flex-column ">
+      <div className="d-flex align-items-center flex-column productContainer ">
         <Link
           to={`/products/${product.id}`}
           className="text-decoration-none text-secondary"
