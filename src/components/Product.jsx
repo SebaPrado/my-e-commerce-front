@@ -7,7 +7,7 @@ function Product({ product }, featured) {
       <div className="d-flex align-items-center flex-column productContainer ">
         <Link
           to={`/products/${product.id}`}
-          className="text-decoration-none text-secondary"
+          className="text-decoration-none text-secondary "
         >
           <img
             className={

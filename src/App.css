@@ -286,12 +286,15 @@
   transition: transform 0.5s ease-in-out;
 }
 
+/* =======================            ========================== */
+
 .custom-nvbar {
-  background-color: rgb(253, 163, 7);  /* color del navbar */
+  background-color: rgba(0, 0, 0, 0.527); /* color del navbar */
   backdrop-filter: blur(5px);
   padding-bottom: 5px !important;
-
 }
+
+/* =======================            ========================== */
 
 .nav-items {
   text-decoration: none;
@@ -300,8 +303,6 @@
   padding: 10px 8px 2px 8px;
   position: relative;
   color: white;
-
-
 }
 
 .nav-items::after {
@@ -313,12 +314,10 @@
   height: 2px;
   background-color: rgb(5, 5, 5);
   transition: width 0.4s;
-
 }
 
 .nav-items:hover::after {
   width: 100%;
-
 }
 
 @media (max-width: 990px) {
@@ -332,7 +331,6 @@
     backdrop-filter: blur(5px);
     border: 0;
     margin-top: 0 !important;
-
   }
   .mt-1 {
     display: flex;
@@ -499,11 +497,10 @@
   transform: translate(-50%, -50%);
   max-width: 25%;
   z-index: 3;
+   /* border: blueviolet 2px solid; */
 }
 
-.logoHero {
-  border: blueviolet 2px solid;
-}
+ 
 
 /* =============     /\    Logo hero   /\   ========   */
 
@@ -774,8 +771,8 @@
   box-shadow: 0 8px 32px 0 rgba(31, 31, 49, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 2px solid rgba(233, 236, 181, 0.219);
+  /* border-radius: 10px !important; */
+  border: 1px solid rgba(253, 182, 75, 0.199);
   /* border: 2px red solid; */
 }
 
@@ -788,12 +785,12 @@
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255, 170, 11);
   box-shadow: 0 8px 32px 0 rgba(230, 229, 229, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgb(236, 12, 12);
 }
 
 .img-members:hover {
@@ -804,6 +801,8 @@
   margin-top: 50px;
   display: flex;
   justify-content: start;
+  /* border: 30px solid red; */
+
 }
 
 .product {
@@ -1253,6 +1252,8 @@
   transform: scale(1.05);
 }
 .productContainer {
+  /* border: red 1px solid; */
+  background-color:rgba(255, 255, 255, 0.986);
   width: 100%;
 }
 
@@ -1498,17 +1499,14 @@
 
 .btn-order {
   border-radius: 0%;
-
 }
 .size-icon-item {
   width: 16px;
   height: 16px !important;
-
 }
-.size-icon-nav-2 {  
+.size-icon-nav-2 {
   width: 16.7px !important;
   height: 16.7px !important;
-
 }
 
 .swiper-pagination-bullet {
@@ -1666,7 +1664,7 @@
 
 .ourStoryText {
   /* width: 100%; */
-  color: white;
+  color: rgba(255, 255, 255, 0.808);
   letter-spacing: 2px;
   text-align: center;
   line-height: 35px;
