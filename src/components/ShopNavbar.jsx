@@ -71,15 +71,15 @@ const ShopNavbar = () => {
         variant="dark"
         expand="lg"
         fixed="top"
-        className="custom-nvbar custom-nvbar-sm"
+        className="custom-nvbar custom-nvbar-sm nav"
       >
         <Container className="">
-          <Link to="/" className="text-white ">
+          <Link to="/" className="text-black logo ">
             <img
               src="/img/equal-vision-logo-navbar.webp"
               alt="Equal Vision Records"
               itemProp="logo"
-              width="60rem"
+              width="50rem"
             ></img>
           </Link>
           <Navbar.Toggle aria-controls="navbarNav" className="text-white " />
@@ -88,13 +88,13 @@ const ShopNavbar = () => {
               <Link to="/about" className="nav-items nav-about">
                 About this project
               </Link>
-              <Link to="/products" className=" nav-items">
+              <Link to="/products" className=" nav-items nav-about">
                 Products
               </Link>
               <a
                 href="https://equalvision-admin.vercel.app"
                 target="_blank"
-                className=" nav-items "
+                className=" nav-items  "
               >
                 Dashboard
               </a>
@@ -105,7 +105,7 @@ const ShopNavbar = () => {
                       <Dropdown.Toggle
                         as={FontAwesomeIcon}
                         icon={faUser}
-                        color="white"
+                        color="red"
                         className="nav-items nav-items-sm arrow-icon-login size-icon-item"
                         id="dropdown-basic"
                         type="button"
@@ -126,7 +126,7 @@ const ShopNavbar = () => {
 
                   <FontAwesomeIcon
                     icon={faMagnifyingGlass}
-                    color="white"
+                    color=""
                     className="nav-items size-icon-nav-2"
                     onClick={handleToast}
                   />

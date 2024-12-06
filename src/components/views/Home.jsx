@@ -193,7 +193,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="container  py-3 ">
+        <div className="container py-3 newReleasesDiv ">
           <Swiper
             breakpoints={{
               0: {
@@ -365,20 +365,20 @@ function Home() {
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    News     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section id="news" className="mt-5 mb-5">
-        <h2 className="text-center space-letter mb-3">NEWS</h2>
+        <h2 className="text-center space-letter mb-3">News</h2>
         <div className="container">
-          <div className="row justify-content-center mt-4 g-4">
-            <div className="col-md-6 col-lg-4 " onClick={handleToast}>
+          <div className="row justify-content-center mt-4 g-4 ">
+            <div className="col-md-6 col-lg-4  " onClick={handleToast}>
               <Link className="text-decoration-none text-black ">
-                <div className="small-hover">
-                  <img className="img-fluid" src={`/img/news-1.webp`} />
+                <div className="small-hover ">
+                  <img className="img-fluid border" src={`/img/7.jpg`} />
                 </div>
-                <div className="d-flex flex-column align-items-center mt-3">
+                <div className="d-flex flex-column align-items-center mt-3 ">
                   <span className="fw-lighter text-center date-font-size text-uppercase">
-                    Apr 15, 2024
+                    Ago 15, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                    YELLOWCARD RELEASE 'A HOPEFUL SIGN' ALBUM WITH HAMMOCK
+                  The soul of blues reborn under midnight lights
                   </p>
                 </div>
               </Link>
@@ -387,15 +387,14 @@ function Home() {
             <div className="col-md-6 col-lg-4 " onClick={handleToast}>
               <Link className="text-decoration-none text-black ">
                 <div className="small-hover">
-                  <img className="img-fluid" src={"/img/news-2.webp"} />
+                  <img className="img-fluid border" src={"/img/5.jpg"} />
                 </div>
                 <div className="d-flex flex-column align-items-center mt-3">
                   <span className="fw-lighter text-center date-font-size text-uppercase">
-                    Mar 07, 2024
+                    Nov 07, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                    NIGHT VERSES ANNOUNCE PART 2 OF 'EVERY SOUND HAS A COLOR IN
-                    THE VALLEY OF NIGHT'
+                  The vintage cassette returns: nostalgia in every rewind
                   </p>
                 </div>
               </Link>
@@ -404,15 +403,14 @@ function Home() {
             <div className="col-md-6 col-lg-4 " onClick={handleToast}>
               <Link className="text-decoration-none text-black ">
                 <div className="small-hover">
-                  <img className="img-fluid" src={`/img/news-3.webp`} />
+                  <img className="img-fluid border" src={`/img/6.jpg`} />
                 </div>
                 <div className="d-flex flex-column align-items-center mt-3">
                   <span className="fw-lighter text-center date-font-size text-uppercase">
-                    Feb 28, 2024
+                    Dec 02, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                    PICTURESQUE PREMIERE NEW SINGLE “CRIMES” WITH ALTERNATIVE
-                    PRESS
+                  An unforgettable night of magic at Radio City.
                   </p>
                 </div>
               </Link>
@@ -421,14 +419,14 @@ function Home() {
             <div className="col-md-6 col-lg-4 " onClick={handleToast}>
               <Link className="text-decoration-none text-black ">
                 <div className="small-hover">
-                  <img className="img-fluid" src={`/img/news-4.webp`} />
+                  <img className="img-fluid border" src={`/img/8.jpg`} />
                 </div>
                 <div className="d-flex flex-column align-items-center mt-3">
                   <span className="fw-lighter text-center date-font-size text-uppercase">
-                    Jan 25, 2024
+                    Oct 25, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                    CALLING ALL CAPTAINS RELEASE NEW SINGLE & VIDEO, “UNDONE”
+                  Electric riffs and passion: the heart of a rock soloist.
                   </p>
                 </div>
               </Link>
@@ -437,14 +435,14 @@ function Home() {
             <div className="col-md-6 col-lg-4 " onClick={handleToast}>
               <Link className="text-decoration-none text-black ">
                 <div className="small-hover">
-                  <img className="img-fluid " src={`/img/news-5.webp`} />
+                  <img className="img-fluid border" src={`/img/3.jpg`} />
                 </div>
                 <div className="d-flex flex-column align-items-center mt-3">
                   <span className="fw-lighter text-center date-font-size text-uppercase">
-                    Jan 12, 2024
+                    Nov 12, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                    ANBERLIN RELEASE NEW EP, ‘SILVERLINE’
+                  Sublime improvisation: jazz resonates with a free spirit.
                   </p>
                 </div>
               </Link>
