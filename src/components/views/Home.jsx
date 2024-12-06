@@ -135,7 +135,14 @@ function Home() {
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section className="mt-5">
-        {/* <div className=" mb-5 swiperSlide" ref={projectRef}>
+       
+        <div className="newreleasesText mt-5">
+          <p className="parrafoInicial">
+            "Unearth the echoes of alternative and timeless melodies, where each
+            note tells a story"
+          </p>
+        </div>
+        <div className="  swiperSlide" ref={projectRef}>
           <h2
             className={`text-center space-letter newReleasesH2 ${
               isVisible[1] ? "slide-left" : ""
@@ -144,16 +151,7 @@ function Home() {
           >
             New Releases
           </h2>
-        </div> */}
-        <div className="newreleasesText mt-5">
-          <p className="mt-5">
-            Discover the freshest sounds and timeless classics on vinyl! From
-            groundbreaking indie anthems to the smoothest jazz and the
-            hardest-hitting rock, our New Releases section is packed with albums
-            that will ignite your passion for music.
-          </p>
         </div>
-
         <div className="container py-3 newReleasesDiv ">
           <Swiper
             breakpoints={{

@@ -1651,6 +1651,25 @@
   margin-bottom: 5rem;
 }
 
+/* ========================  \/          Parrafo inicial           \/       ==============  */
+
+
+.parrafoInicial{
+  margin-top: 16vw;
+  margin-bottom:16vw ;
+  /* background-color: wheat; */
+  letter-spacing: 3px !important;
+  font-size: 29px !important;
+  font-weight: 500 !important;
+  /* font-stretch: expanded !important; */
+
+;
+
+}
+
+/* ========================      /\          Parrafo inicial      /\       ==============  */
+
+
 /* ========================  \/          Echoes Through Time          \/       ==============  */
 
 @media (width>=768px) {
@@ -1846,6 +1865,7 @@
 .swiperSlide {
   max-width: 100%;
   box-sizing: border-box;
+  background-color: gray;
 }
 .roomText {
   padding-left: 75px;
@@ -1927,7 +1947,7 @@
 
 @media (575px <= width < 768px) {
   .newReleasesDiv {
-    /* border: pink 2px solid; */
+    border: pink 2px solid;
     padding-left: 6rem;
     padding-right: 6rem;
   }
