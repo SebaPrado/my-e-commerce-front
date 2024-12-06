@@ -210,7 +210,7 @@ function Home() {
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section className="mt-5">
+      <section className=" sectionEchoes">
         {/* <div ref={projectRef}>
     <h2
       className={` px-1 text-center space-letter newReleasesH2 tituloEchoesThroughTime ${

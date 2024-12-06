@@ -1651,7 +1651,27 @@
   margin-bottom: 5rem;
 }
 
-/* ========================  \/          Our Story          \/       ==============  */
+/* ========================  \/          Echoes Through Time          \/       ==============  */
+
+@media (width>=768px) {
+  .sectionEchoes{
+    margin-top: 12rem !important;
+  }
+}
+
+@media (576px >= width >=767px)  {
+  .sectionEchoes {
+    margin-top: 9rem !important; /* Tablet */
+  }
+}
+
+@media (max-width: 575px) {
+  .sectionEchoes {
+    margin-top: 6rem !important; /* Phone */
+  }
+}
+
+
 
 .ourStoryContainer {
   display: flex;
