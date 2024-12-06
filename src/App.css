@@ -1647,8 +1647,12 @@
 }
 
 .newReleasesH2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.roomH2 {
   margin-top: 7rem;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 /* ========================  \/          Parrafo inicial           \/       ==============  */
@@ -1656,7 +1660,7 @@
 
 .parrafoInicial{
   margin-top: 16vw;
-  margin-bottom:16vw ;
+  margin-bottom:19vw ;
   /* background-color: wheat; */
   letter-spacing: 3px !important;
   font-size: 29px !important;
@@ -1865,7 +1869,7 @@
 .swiperSlide {
   max-width: 100%;
   box-sizing: border-box;
-  background-color: gray;
+  /* background-color: gray; */
 }
 .roomText {
   padding-left: 75px;
@@ -1956,3 +1960,36 @@
 .border {
   border-radius: 5px;
 }
+
+/*   animaciones scroll css video tutorial Kevin Powell  */
+
+.fadeOut{
+  animation: fade-out ease-out;
+  animation-timeline: view();
+  animation-range: exit ; 
+   /* border: yellow 2px solid; */
+
+  /* animation: header-image-animation linear;
+  animation-timeline: view(); */
+}
+
+@keyframes fade-out {
+  70%, 100% {opacity: 0; scale: 3;}
+}
+/* @keyframes header-image-animation {
+  25% {opacity: 1;}
+  80% {opacity: 0;}
+} */
+
+.fadeIn{
+  animation: fade-in ease-in;
+  animation-timeline: view();
+  animation-range: start  ;
+  animation-fill-mode: both;
+}
+@keyframes fade-in {
+  0%{opacity: 0 ; scale: 1.4}
+  20%{opacity: 1; scale: 1;}
+}
+
+

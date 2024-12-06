@@ -111,7 +111,7 @@ function Home() {
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Hero     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <div className="video-player-container">
+      <div className="video-player-container fadeOut">
         <video
           src={video}
           autoPlay
@@ -184,13 +184,13 @@ function Home() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className="mySwiper pb-5 borde "
+            className="mySwiper pb-4 borde px-3"
           >
             {productList
               .filter((product) => product.featured === true)
               .map((product) => (
                 <SwiperSlide
-                  className=" my-5 very-small-hover newReleases "
+                  className=" my-4 very-small-hover newReleases "
                   key={product.id}
                 >
                   <Product product={product} featured={true} />
@@ -220,10 +220,10 @@ function Home() {
     </h2>
   </div> */}
         <div className="ourStoryContainer ">
-          <div className="echoesImage mt-5">
+          <div className="echoesImage mt-5 ">
             <div className="ourStoryText overlay-image">
-              <div>
-                <p>
+              <div className=""> 
+                <p className="fadeIn">
                   Established in an era when melodies flowed not through wires
                   but hearts, our store has been a sanctuary for the vinyl
                   enthusiast since its humble beginnings. Beneath the warm glow
@@ -321,7 +321,7 @@ function Home() {
 
       <section>
         <h2
-          className={`text-center space-letter newReleasesH2  `}
+          className={`text-center space-letter roomH2  `}
           ref={titleRefs[3]}
         >
           The Listening Room
