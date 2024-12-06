@@ -1655,6 +1655,15 @@
   margin-bottom: 7rem;
 }
 
+@media (width<=868px) {
+  .roomH2 {
+    margin-top: 7rem;
+    margin-bottom:3rem;
+    border: green 2px solid;
+
+  }
+}
+
 /* ========================  \/          Parrafo inicial           \/       ==============  */
 
 
@@ -1847,7 +1856,6 @@
   left: 10%; /* => derecha */
   width: 76%;
   z-index: 2;
-  background-image: url("/img/1.jpg");
   background-size: cover;
   height: 60%;
   border-radius: 3px;
@@ -1855,7 +1863,7 @@
 
 .roomContainer3 {
   position: absolute;
-  top: 35%; /* ↓ abajo */
+  top: 40%; /* ↓ abajo */
   left: 12%; /* => derecha */
   width: 72%;
   z-index: 10;

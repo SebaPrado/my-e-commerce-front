@@ -90,7 +90,7 @@ function Home() {
       if (titleRefs[3].current) {
         const rect = titleRefs[3].current.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {
-          const newOffset = Math.min(55, (window.innerHeight - rect.top) / 10); // Calcular desplazamiento
+          const newOffset = Math.min(75, (window.innerHeight - rect.top) / 10); // Calcular desplazamiento
           setOffset(newOffset); // Actualizar el estado del desplazamiento
         } else {
         }
@@ -175,15 +175,15 @@ function Home() {
             // }}
             speed={1000}
             coverflowEffect={{
-              rotate: 15,
+              rotate: 12,
               stretch: 0,
-              depth: 10,
-              modifier: -0.8,
+              depth: 16,
+              modifier: -1,
               slideShadows: false,
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className="mySwiper pb-4 borde px-3"
+            className="mySwiper pb-5 borde px-1 mx-1"
           >
             {productList
               .filter((product) => product.featured === true)
@@ -250,7 +250,7 @@ function Home() {
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      {/* <section id="shop-by-category" className="mt-5 mb-5 ">
+      <section id="shop-by-category" className="mt-5 mb-5 ">
         <h2
           className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime `}
           ref={titleRefs[2]}
@@ -308,7 +308,7 @@ function Home() {
             ))}
           </Swiper>
         </div>
-      </section> */}
+      </section>
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
