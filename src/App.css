@@ -483,22 +483,22 @@
   opacity: 0.6;
 }
 
-.overlay-image {
+/* =============     \/    Logo hero   \/   ========   */
+
+.logoHero {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 70% !important;
+  max-width: 25%;
+  z-index: 3;
 }
 
-@media (max-width: 767px) {
-  .overlay-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.logoHero {
+  border: blueviolet 2px solid;
 }
+
+/* =============     /\    Logo hero   /\   ========   */
 
 .leyend {
   color: #858585;
@@ -1643,26 +1643,28 @@
   margin-bottom: 5rem;
 }
 
+/* ========================  \/          Our Story          \/       ==============  */
+
 .ourStoryContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 500px;
   margin-bottom: 5rem;
+  border: red 2px solid;
 }
 
 .ourStoryText {
-  position: absolute;
-  width: 100%;
-  color: rgb(255, 255, 255);
+  /* width: 100%; */
+  color: white;
   letter-spacing: 2px;
   text-align: center;
-  /* border: red 1px solid; */
-}
-.ourStoryText p {
-  /* width: 100% !important; */
-  /* padding-bottom: 30px; */
   line-height: 35px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   border: green 1px solid;
 }
 
@@ -1688,22 +1690,9 @@
   }
   .ourStoryText {
     order: 2;
-    margin-top: 50px;
-    /* padding-right: 45px; */
-    /* padding-left: 29px; */
+    padding-inline: 50px;
     width: 100% !important;
-    border: yellow 2px solid;
-
-  }
-  .overlay-image {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Añadir esta línea para centrar el elemento */
-    max-width: 37% !important;
+    border: rgb(255, 8, 0) 2px solid;
   }
 }
 
@@ -1717,9 +1706,10 @@
   }
   .ourStoryText {
     margin-top: 0px;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    margin-left: -25px !important;
+    padding: 1rem;
+    /* padding-right: 0px !important;
+    padding-left: 0px !important; */
+    /* margin-left: -25px !important; */
     width: 100%;
   }
   .ourStoryContainer {
@@ -1736,10 +1726,9 @@
     letter-spacing: normal;
     word-spacing: normal;
   }
-  .overlay-image {
-    max-width: 40% !important;
-  }
 }
+
+/* ========================      /\        Our Story         /\       ==============  */
 
 /*   ==========          New releases     ==========  */
 
@@ -1755,6 +1744,12 @@
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 32px;
+}
+@media (width <= 769px) {
+  .newReleasesH2 {
+    margin-top: 65px;
+    margin-bottom: 22px;
+  }
 }
 
 .slide-left {

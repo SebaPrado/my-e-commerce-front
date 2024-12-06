@@ -124,7 +124,7 @@ function Home() {
           src="/img/equal-vision-logo.webp"
           alt="Equal Vision Records Logo"
           itemProp="logo"
-          className="overlay-image"
+          className="overlay-image logoHero"
         ></img>
       </div>
 
