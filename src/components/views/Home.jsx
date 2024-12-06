@@ -135,7 +135,6 @@ function Home() {
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section className="mt-5">
-       
         <div className="newreleasesText mt-5">
           <p className="parrafoInicial">
             "Unearth the echoes of alternative and timeless melodies, where each
@@ -146,7 +145,7 @@ function Home() {
           <h2
             className={`text-center space-letter newReleasesH2 ${
               isVisible[1] ? "slide-left" : ""
-              }`}
+            }`}
             ref={titleRefs[1]}
           >
             New Releases
@@ -222,7 +221,7 @@ function Home() {
         <div className="ourStoryContainer ">
           <div className="echoesImage mt-5 ">
             <div className="ourStoryText overlay-image">
-              <div className=""> 
+              <div className="">
                 <p className="fadeIn">
                   Established in an era when melodies flowed not through wires
                   but hearts, our store has been a sanctuary for the vinyl
@@ -321,7 +320,7 @@ function Home() {
 
       <section>
         <h2
-          className={`text-center space-letter roomH2  `}
+          className={`text-center space-letter roomH2 desaparecerScroll `}
           ref={titleRefs[3]}
         >
           The Listening Room
