@@ -129,63 +129,24 @@ function Home() {
       </div>
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    Hero     ↑ ↑ ↑ ↑ ↑    ====================================== */}
-
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
-
-      <section className="">
-        <div ref={projectRef}>
-          <h2
-            className={` px-1 text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
-              isVisible[0] ? "slide-left" : ""
-            }`}
-            ref={titleRefs[0]}
-          >
-            Echoes Through Time
-          </h2>
-        </div>
-        <div className="ourStoryContainer">
-          <div className="ourStoryText">
-            <p>
-              Established in an era when melodies flowed not through wires but
-              hearts, our store has been a sanctuary for the vinyl enthusiast
-              since its humble beginnings. Beneath the warm glow of gaslit
-              lamps, music lovers would gather to peruse shelves stacked high
-              with records that whispered tales of passion, rebellion, and
-              romance. Here, the air hums with nostalgia, as each groove carries
-              the soul of an artist long past, awaiting discovery anew.
-            </p>{" "}
-            <p>
-              Through the decades, as trends have come and gone, our mission
-              remains steadfast: to preserve the art of analog sound. Within
-              these walls lies a treasure trove of history, from the crackling
-              blues that defined a generation to the symphonies that stirred
-              hearts worldwide. For us, every vinyl is not just a product—it is
-              a story waiting to be told, a memory to be made, and a piece of
-              history to be cherished.
-            </p>
-          </div>
-          <div className="echoesImage"></div>
-        </div>
-      </section>
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
-      <div className="container">
+      {/* <div className="container">
         <hr />
-      </div>
+      </div> */}
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section>
-        <div className=" mb-5 swiperSlide" ref={projectRef}>
+      <section className="mt-5">
+        {/* <div className=" mb-5 swiperSlide" ref={projectRef}>
           <h2
             className={`text-center space-letter newReleasesH2 ${
               isVisible[1] ? "slide-left" : ""
-            }`}
+              }`}
             ref={titleRefs[1]}
           >
             New Releases
           </h2>
-        </div>
-        <div className="newreleasesText">
-          <p>
+        </div> */}
+        <div className="newreleasesText mt-5">
+          <p className="mt-5">
             Discover the freshest sounds and timeless classics on vinyl! From
             groundbreaking indie anthems to the smoothest jazz and the
             hardest-hitting rock, our New Releases section is packed with albums
@@ -243,9 +204,52 @@ function Home() {
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    New Releases       ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
-      <div className="container mt-5">
+      {/* <div className="container mt-5">
         <hr />
-      </div>
+      </div> */}
+
+      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+
+      <section className="mt-5">
+        {/* <div ref={projectRef}>
+    <h2
+      className={` px-1 text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
+        isVisible[0] ? "slide-left" : ""
+      }`}
+      ref={titleRefs[0]}
+    >
+      Echoes Through Time
+    </h2>
+  </div> */}
+        <div className="ourStoryContainer ">
+          <div className="echoesImage mt-5">
+            <div className="ourStoryText overlay-image">
+              <div>
+                <p>
+                  Established in an era when melodies flowed not through wires
+                  but hearts, our store has been a sanctuary for the vinyl
+                  enthusiast since its humble beginnings. Beneath the warm glow
+                  of gaslit lamps, music lovers would gather to peruse shelves
+                  stacked high with records that whispered tales of passion,
+                  rebellion, and romance. Here, the air hums with nostalgia, as
+                  each groove carries the soul of an artist long past, awaiting
+                  discovery anew.
+                </p>{" "}
+              </div>
+              {/* <p>
+        Through the decades, as trends have come and gone, our mission
+        remains steadfast: to preserve the art of analog sound. Within
+        these walls lies a treasure trove of history, from the crackling
+        blues that defined a generation to the symphonies that stirred
+        hearts worldwide. For us, every vinyl is not just a product—it is
+        a story waiting to be told, a memory to be made, and a piece of
+        history to be cherished.
+      </p> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
@@ -378,7 +382,7 @@ function Home() {
                     Ago 15, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                  The soul of blues reborn under midnight lights
+                    The soul of blues reborn under midnight lights
                   </p>
                 </div>
               </Link>
@@ -394,7 +398,7 @@ function Home() {
                     Nov 07, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                  The vintage cassette returns: nostalgia in every rewind
+                    The vintage cassette returns: nostalgia in every rewind
                   </p>
                 </div>
               </Link>
@@ -410,7 +414,7 @@ function Home() {
                     Dec 02, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                  An unforgettable night of magic at Radio City.
+                    An unforgettable night of magic at Radio City.
                   </p>
                 </div>
               </Link>
@@ -426,7 +430,7 @@ function Home() {
                     Oct 25, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                  Electric riffs and passion: the heart of a rock soloist.
+                    Electric riffs and passion: the heart of a rock soloist.
                   </p>
                 </div>
               </Link>
@@ -442,7 +446,7 @@ function Home() {
                     Nov 12, 2024
                   </span>
                   <p className="text-uppercase fw-bold text-black text-center mt-3">
-                  Sublime improvisation: jazz resonates with a free spirit.
+                    Sublime improvisation: jazz resonates with a free spirit.
                   </p>
                 </div>
               </Link>

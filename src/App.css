@@ -278,15 +278,13 @@
   width: 83%;
 }
 
-.logo :hover{
+.logo :hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
-
 }
 .logo {
   transition: transform 0.5s ease-in-out;
 }
-
 
 .custom-nvbar {
   background-color: #000000bb;
@@ -299,7 +297,7 @@
   font-weight: bold;
   padding: 10px 8px 2px 8px;
   position: relative;
-  color:white;
+  color: white;
 }
 
 .nav-items::after {
@@ -487,10 +485,10 @@
 
 .overlay-image {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 23% !important;
+  max-width: 70% !important;
 }
 
 @media (max-width: 767px) {
@@ -1526,7 +1524,7 @@
 }
 
 .nav-about {
-  color:wheat;
+  color: wheat;
 }
 
 .nav-about::after {
@@ -1536,7 +1534,7 @@
   bottom: 0px;
   width: 0;
   height: 2px;
-  background-color:wheat;
+  background-color: wheat;
 
   transition: width 0.6s;
 }
@@ -1654,18 +1652,24 @@
 }
 
 .ourStoryText {
-  width: 45%;
-  padding-right: 65px;
+  position: absolute;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  text-align: center;
   /* border: red 1px solid; */
 }
 .ourStoryText p {
-  padding-bottom: 30px;
-  padding-left: 20px;
+  /* width: 100% !important; */
+  /* padding-bottom: 30px; */
   line-height: 35px;
+  border: green 1px solid;
 }
 
 .echoesImage {
-  width: 50%;
+  position: relative;
+  width: 100%;
+  height: 400px;
   padding: 5px 5px 5px 5px;
   border-radius: 10px;
   /* border: red 2px solid; */
@@ -1677,24 +1681,36 @@
 
 @media (770px <= width <= 960px) {
   .echoesImage {
-    width: 90%;
-    height: 300px;
+    width: 110%;
+    height: 500px;
     order: -1;
     border: yellow 2px solid;
   }
   .ourStoryText {
     order: 2;
     margin-top: 50px;
-    padding-right: 45px;
-    padding-left: 29px;
-    width: 100%;
+    /* padding-right: 45px; */
+    /* padding-left: 29px; */
+    width: 100% !important;
+    border: yellow 2px solid;
+
+  }
+  .overlay-image {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Añadir esta línea para centrar el elemento */
+    max-width: 37% !important;
   }
 }
 
 @media (width <= 769px) {
   .echoesImage {
     width: 100%;
-    height: 300px;
+    height: auto;
     margin-bottom: 40px;
     order: -1;
     border: rgb(9, 0, 128) 2px solid;
@@ -1707,13 +1723,21 @@
     width: 100%;
   }
   .ourStoryContainer {
-    padding: 30px !important;
+    /* padding: 30px !important; */
     justify-content: center;
     margin-bottom: 0.1rem !important;
   }
   .newReleasesH2 {
     margin-top: 65px;
     margin-bottom: 22px;
+  }
+  .ourStoryText p {
+    font-size: small;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+  .overlay-image {
+    max-width: 40% !important;
   }
 }
 
@@ -1887,7 +1911,6 @@
   }
 }
 
-.border{
-  border-radius: 5px ;
+.border {
+  border-radius: 5px;
 }
-
