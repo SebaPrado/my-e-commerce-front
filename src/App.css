@@ -778,9 +778,16 @@ h2 {
 
 /* ====================            responsividad   categories slider   \/  ============== */
 
+.newReleasesDiv {
+  /* border: pink 2px solid; */
+  width: 100vw ;
+  display: flex;
+  justify-content: center;
+}
+
 @media (width <= 1900px) {
   .catCards3 {
-    border: pink 2px solid ;
+    /* border: pink 2px solid ; */
     padding-inline: 3rem;
     margin-bottom: 2rem;
     max-height: 340px;
@@ -789,34 +796,33 @@ h2 {
       } 
     
   .catCards3 img {
-    border: red 2px solid;
+    /* border: red 2px solid; */
     max-height: 340px;
     max-width: 280px;
       }
       
-      .catCards1 {
+      /* .catCards1 {
         border: orange 2px dotted;
-      }
+      } */
     }
 
 @media (width <768px) {
-  .catCards1 {
+  /* .catCards1 {
     border: orange 2px dotted;
-  }
+  } */
   .catCards2 {
     display: flex;
     justify-content: center;
-    border: blue dotted 2px;
-    /* padding: 5vw !important; */
+    /* border: blue dotted 2px; */
   }
   .catCards3 {
-    border: pink 2px dotted;
+    /* border: pink 2px dotted; */
     padding-inline: 1rem;
     width: 100% !important;
   }
-  .catCards3 img {
+  /* .catCards3 img {
     border: red 2px dotted;
-  }
+  } */
 }
 
 /* @media (width < 575px) {
@@ -2029,16 +2035,6 @@ h2 {
     width: 100%;
   }
 }
-
-/* @media (275px <= width < 768px) { */
-  .newReleasesDiv {
-    border: pink 2px solid;
-    width: 100vw !important;
-    display: flex;
-    justify-content: center;
-  }
-/* } */
-
 .border {
   border-radius: 5px;
 }

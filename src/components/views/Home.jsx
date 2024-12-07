@@ -151,7 +151,7 @@ function Home() {
             New Releases
           </h2>
         </div>
-        <div className="container py-3 newReleasesDiv redBorder ">
+        <div className=" py-3 newReleasesDiv redBorder ">
           <Swiper
             breakpoints={{
               0: {
@@ -243,13 +243,13 @@ function Home() {
 
       <section id="shop-by-category" className="mt-5 mb-5 ">
         <h2
-          className={` text-center space-letter newReleasesH2 tituloEchoesThroughTime `}
+          className={` text-center space-letter newReleasesH2  `}
           ref={titleRefs[2]}
         >
           Shop by Category
         </h2>
 
-        <div className="container py-3 newReleasesDiv  ">
+        <div className=" py-3 newReleasesDiv  ">
           <Swiper
             breakpoints={{
               0: {
