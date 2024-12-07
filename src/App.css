@@ -2008,7 +2008,7 @@ h2 {
 
 @media (width < 1200px) {
   .roomContainer {
-    border: yellow 4px dotted;
+    /* border: yellow 4px dotted; */
     width: 90%;
     height: 700px;
 
@@ -2036,7 +2036,6 @@ h2 {
     width: 80%;
   }
   .roomText2 p {
-    /* width: 70%; */
     align-self: center;
     align-items: center;
   }
