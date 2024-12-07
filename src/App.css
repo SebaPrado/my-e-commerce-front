@@ -1930,7 +1930,7 @@ h2 {
   text-align: start;
   line-height: 32px;
   width: 46%;
-  border: skyblue 2px solid;
+  /* border: skyblue 2px solid; */
 }
 .roomText p {
   font-size: 16px;
@@ -1957,14 +1957,14 @@ h2 {
   flex-wrap: wrap;
   min-height: 500px;
   margin-bottom: 5rem;
-  border: pink 2px solid;
+  /* border: pink 2px solid; */
 }
 
 .roomContainer {
   position: relative;
   width: 53%;
   overflow: hidden; /* Oculta el desbordamiento */
-  border: yellow 2px solid;
+  /* border: yellow 2px solid; */
   box-sizing: border-box;
   height: 600px;
   order: -1;
