@@ -151,7 +151,7 @@ function Home() {
             New Releases
           </h2>
         </div>
-        <div className=" py-3 newReleasesDiv redBorder ">
+        <div className=" py-3 newReleasesDiv  ">
           <Swiper
             breakpoints={{
               0: {
@@ -183,13 +183,13 @@ function Home() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className=" pb-5 borde px-1 mx-1 greenBorder"
+            className=" pb-5 borde px-1 mx-1 "
           >
             {productList
               .filter((product) => product.featured === true)
               .map((product) => (
                 <SwiperSlide
-                  className=" my-4 very-small-hover newReleases blueBorder "
+                  className=" my-4 very-small-hover newReleases  "
                   key={product.id}
                 >
                   <Product product={product} featured={true} />
@@ -265,7 +265,7 @@ function Home() {
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={false}
-            loop={false}
+            loop={true}
             speed={1000}
             coverflowEffect={{
               rotate: 0,
@@ -318,12 +318,12 @@ function Home() {
 
       <section>
         <h2
-          className={`  text-center space-letter roomH2 desaparecerScroll `}
+          className={`  text-center space-letter roomH2  `}
           ref={titleRefs[3]}
         >
           The Listening Room
         </h2>
-        <div className="ourStoryContainer">
+        <div className="ourroomContainer">
           <div className="roomText">
             <p>
               Beyond the storefront lies a secret haven—the Listening Room,

@@ -1742,29 +1742,20 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.roomH2 {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-}
 
-@media (width<=868px) {
-  .roomH2 {
-    margin-top: 7rem;
-    margin-bottom: 3rem;
-    border: green 2px solid;
-  }
-}
+
+
 
 /* ========================  \/          Parrafo inicial           \/       ==============  */
 
 .parrafoInicial {
   margin-top: 16vw;
   margin-bottom: 19vw;
-  /* background-color: wheat; */
+  /* background-color: white; */
   letter-spacing: 3px !important;
+  line-height: 39px !important;
   font-size: 29px !important;
   font-weight: 500 !important;
-  /* font-stretch: expanded !important; */
 }
 
 /* ========================      /\          Parrafo inicial      /\       ==============  */
@@ -1916,6 +1907,42 @@ h2 {
   letter-spacing: 4px;
 }
 
+
+/* ========================      \/          The listening room       \/       ==============  */
+
+.roomH2 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+@media (width>=869px) {
+  .roomH2 {
+    margin-inline: 1rem;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    border: green 2px solid;
+  }
+}
+
+@media (width<=868px) {
+  .roomH2 {
+    margin-inline: 1.5rem;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    border: yellow 2px solid;
+  }
+}
+
+.ourroomContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 500px;
+  margin-bottom: 5rem;
+  /* border: red 2px solid; */
+}
+
+
 .roomContainer {
   position: relative;
   width: 53%;
@@ -2035,6 +2062,10 @@ h2 {
     width: 100%;
   }
 }
+
+/* ========================      /\          The listening room       /\       ==============  */
+
+
 .border {
   border-radius: 5px;
 }
