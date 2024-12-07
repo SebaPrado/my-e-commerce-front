@@ -778,54 +778,58 @@ h2 {
 
 /* ====================            responsividad   categories slider   \/  ============== */
 
-@media (width >= 1200px) {
-  .catCards {
-    /* border: pink 20px solid !important; */
-      } }
-
-@media (width >=768px) {
+@media (width <= 1900px) {
   .catCards3 {
+    border: pink 2px solid ;
+    padding-inline: 3rem;
+    margin-bottom: 2rem;
+    max-height: 340px;
+    display: flex;
+    justify-content: center;
+      } 
+    
+  .catCards3 img {
+    border: red 2px solid;
+    max-height: 340px;
+    max-width: 280px;
+      }
+      
+      .catCards1 {
+        border: orange 2px dotted;
+      }
+    }
+
+@media (width <768px) {
+  .catCards1 {
+    border: orange 2px dotted;
+  }
+  .catCards2 {
+    display: flex;
+    justify-content: center;
+    border: blue dotted 2px;
+    /* padding: 5vw !important; */
+  }
+  .catCards3 {
+    border: pink 2px dotted;
+    padding-inline: 1rem;
+    width: 100% !important;
+  }
+  .catCards3 img {
+    border: red 2px dotted;
+  }
+}
+
+/* @media (width < 575px) {
+  .catCards3 img {
+    border: red 2px dotted;
+  }
+  .catCards2 {
+    border: blue solid 2px;
+  }
+  .catCards1 {
     border: orange 2px solid;
   }
-  .catCards2 {
-    display: flex;
-    justify-content: center;
-    border: blue solid 2px;
-    padding: 5vw !important;
-    /* width: 33% !important; */
-  }
-  .catCards {
-    border: red 2px solid;
-    max-width: 30vw;
-    max-height: 400px;
-    /* margin-right: 40px !important; */
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
-  }
-  .catCards img {
-    border: red 2px solid;
-    max-width: 210px;
-    max-height: 320px;
-    /* margin-right: 40px !important; */
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
-  }
-}
-
-@media (width >=650px) {
-  .catCards {
-    border: yellow 1px solid;
-    width: 100% !important;
-    /* max-height:100% !important; */
-  }
-  .catCards2 {
-    display: flex;
-    justify-content: center;
-    border: blue solid 2px;
-    padding: 3vw !important;
-    width: 100% !important;
-  }
-}
+} */
 
 
 /* ====================            responsividad   categories slider   /\  ============== */
@@ -2026,16 +2030,14 @@ h2 {
   }
 }
 
-@media (275px <= width < 768px) {
+/* @media (275px <= width < 768px) { */
   .newReleasesDiv {
-    /* border: pink 2px solid; */
-    /* padding-left: 1rem; */
-    /* padding-right: 1rem; */
+    border: pink 2px solid;
+    width: 100vw !important;
     display: flex;
     justify-content: center;
-    /* margin-inline: 1rem; */
   }
-}
+/* } */
 
 .border {
   border-radius: 5px;

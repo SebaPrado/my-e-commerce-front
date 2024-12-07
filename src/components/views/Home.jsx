@@ -276,14 +276,14 @@ function Home() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className=" pb-5 borde px-1 mx-1 catCards3"
+            className=" pb-5 borde px-1 mx-1 catCards1"
           >
             {categories.map((category) => (
               <SwiperSlide
                 className=" my-4 very-small-hover newReleases catCards2 "
                 key={category.id}
               >
-                <div className=" very-small-hover catCards   ">
+                <div className=" very-small-hover catCards3   ">
                   <Link
                     to={`products/categories/${category.id}`}
                     className="text-decoration-none"
