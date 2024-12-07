@@ -770,17 +770,15 @@ h2 {
 }
 
 .newReleases {
-
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
- 
 }
 
 /* ====================            responsividad   categories slider   \/  ============== */
 
 .newReleasesDiv {
   /* border: pink 2px solid; */
-  width: 100vw ;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -793,18 +791,18 @@ h2 {
     max-height: 340px;
     display: flex;
     justify-content: center;
-      } 
-    
+  }
+
   .catCards3 img {
     /* border: red 2px solid; */
     max-height: 340px;
     max-width: 280px;
-      }
-      
-      /* .catCards1 {
+  }
+
+  /* .catCards1 {
         border: orange 2px dotted;
       } */
-    }
+}
 
 @media (width <768px) {
   /* .catCards1 {
@@ -837,10 +835,7 @@ h2 {
   }
 } */
 
-
 /* ====================            responsividad   categories slider   /\  ============== */
-
-
 
 @media (max-width: 575px) {
   .borde {
@@ -1743,9 +1738,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-
-
-
 /* ========================  \/          Parrafo inicial           \/       ==============  */
 
 .parrafoInicial {
@@ -1862,7 +1854,7 @@ h2 {
   }
 }
 
-/* ========================      /\        Our Story         /\       ==============  */
+/* ========================      /\ Our Story /\       ==============  */
 
 /*   ==========          New releases     ==========  */
 
@@ -1907,7 +1899,6 @@ h2 {
   letter-spacing: 4px;
 }
 
-
 /* ========================      \/          The listening room       \/       ==============  */
 
 .roomH2 {
@@ -1933,27 +1924,57 @@ h2 {
   }
 }
 
-.ourroomContainer {
+.roomText2 {
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: start;
+  line-height: 32px;
+  width: 46%;
+  border: skyblue 2px solid;
+}
+.roomText p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+@media (width < 1200px) {
+  .roomText2 {
+    width: 85%;
+    text-align: center;
+    line-height: 29px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .roomText p {
+    margin-bottom: 30px;
+  }
+}
+
+.roomText1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 500px;
   margin-bottom: 5rem;
-  /* border: red 2px solid; */
+  border: pink 2px solid;
 }
-
 
 .roomContainer {
   position: relative;
   width: 53%;
   overflow: hidden; /* Oculta el desbordamiento */
+  border: yellow 2px solid;
+  box-sizing: border-box;
+  height: 600px;
+  order: -1;
 }
 
 .roomContainer1 {
   position: absolute;
-  left: 10%;
+  left: 12%;
   top: 0;
-  z-index: 19;
+  z-index: 4;
   background-image: url("/img/music.jpg");
   background-size: cover;
   width: 75%;
@@ -1977,7 +1998,7 @@ h2 {
   top: 40%; /* ↓ abajo */
   left: 12%; /* => derecha */
   width: 72%;
-  z-index: 10;
+  z-index: 3;
   background-image: url("/img/3.jpg");
   background-size: cover;
   height: 50%;
@@ -1985,52 +2006,25 @@ h2 {
   box-shadow: 0 0 18px rgb(255, 255, 253);
 }
 
-.roomText {
-  padding-left: 75px;
-  padding-right: 75px;
-  text-align: start;
-  line-height: 32px;
-  width: 46%;
-  /* text-align: center; */
-}
-.roomText p {
-  /* width: 70%; */
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 32px;
-}
-
-@media (max-width: 1200px) {
+@media (width < 1200px) {
   .roomContainer {
-    width: 70%;
-    height: 500px;
-    box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
-    background-size: contain;
-    order: -1;
-  }
-  .roomText {
-    width: 85%;
-    border: skyblue 2px solid;
-    text-align: center;
-    line-height: 29px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .roomText p {
-    margin-bottom: 30px;
+    border: yellow 4px dotted;
+    width: 90%;
+    height: 700px;
+
   }
 }
 
-@media (max-width: 780px) {
+@media (width < 780px) {
   .roomContainer {
-    width: 70%;
+    width: 100%;
     height: 500px;
     box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
     background-size: contain;
     order: -1;
     align-items: center;
   }
-  .roomText {
+  .roomText2 {
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
@@ -2041,22 +2035,23 @@ h2 {
     align-items: center;
     width: 80%;
   }
-  .roomText p {
+  .roomText2 p {
     /* width: 70%; */
     align-self: center;
     align-items: center;
   }
 }
 
-@media (max-width: 580px) {
+@media (width < 680px) {
   .roomContainer {
-    width: 90%;
-    height: 240px;
+    width: 100%;
+    max-height: 440px;
     padding: 0 20px;
     box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho total */
     background-size: cover;
     background-position: center;
     order: -1;
+    /* border: yellow 2px solid; */
   }
   .roomText {
     width: 100%;
@@ -2065,26 +2060,24 @@ h2 {
 
 /* ========================      /\          The listening room       /\       ==============  */
 
-
 .border {
   border-radius: 5px;
 }
 
-.redBorder {
+/* .redBorder {
   border: red 2px solid;
-  /* padding-inline: 0rem !important; */
-}
+  padding-inline: 0rem !important;
+} */
 
 .greenBorder {
-  border: green 2px solid !important;
+  /* border: green 2px solid !important; */
   padding-inline: 0rem !important;
-  marging-inline: 0rem !important;
+  margin-inline: 0rem !important;
 }
 
-.blueBorder {
+/* .blueBorder {
   border: blue 2px solid !important;
-  /* margin-inline: 0rem; */
-}
+} */
 
 /* ===========              animaciones scroll css video tutorial Kevin Powell    =====   */
 

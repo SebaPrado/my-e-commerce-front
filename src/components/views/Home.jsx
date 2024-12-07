@@ -105,13 +105,13 @@ function Home() {
 
   return (
     <>
-      <Link to="about">
+      {/* <Link to="about">
         <button className="button-to-about">ABOUT THIS PROJECT</button>
-      </Link>
+      </Link> */}
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Hero     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <div className="video-player-container fadeOut">
+      {/* <div className="video-player-container fadeOut">
         <video
           src={video}
           autoPlay
@@ -126,15 +126,15 @@ function Home() {
           itemProp="logo"
           className="overlay-image logoHero"
         ></img>
-      </div>
+      </div> */}
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    Hero     ↑ ↑ ↑ ↑ ↑    ====================================== */}
-      {/* <div className="container">
+      <div className="container">
         <hr />
-      </div> */}
+      </div>
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section className="mt-5 ">
+      {/* <section className="mt-5 ">
         <div className="newreleasesText mt-5">
           <p className="parrafoInicial ourProducts ">
             "Unearth the echoes of timeless melodies, where each note tells a
@@ -197,7 +197,7 @@ function Home() {
               ))}
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    New Releases       ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
@@ -207,17 +207,8 @@ function Home() {
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section className=" sectionEchoes">
-        {/* <div ref={projectRef}>
-    <h2
-      className={` px-1 text-center space-letter newReleasesH2 tituloEchoesThroughTime ${
-        isVisible[0] ? "slide-left" : ""
-      }`}
-      ref={titleRefs[0]}
-    >
-      Echoes Through Time
-    </h2>
-  </div> */}
+      {/* <section className=" sectionEchoes">
+    
         <div className="ourStoryContainer ">
           <div className="echoesImage mt-5 ">
             <div className="ourStoryText overlay-image">
@@ -236,7 +227,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
@@ -310,9 +301,9 @@ function Home() {
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
-      {/* <div className="container mt-5">
+      <div className="container mt-5">
         <hr />
-      </div> */}
+      </div>
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
@@ -323,8 +314,8 @@ function Home() {
         >
           The Listening Room
         </h2>
-        <div className="ourroomContainer">
-          <div className="roomText">
+        <div className="roomText1">
+          <div className="roomText2">
             <p>
               Beyond the storefront lies a secret haven—the Listening Room,
               where the magic of vinyl truly comes alive. With rich wooden
@@ -345,12 +336,12 @@ function Home() {
           <div className="roomContainer ">
             <div
               className="roomContainer1"
-              style={{ transform: `translateX(-${offset}px)` }}
+              style={{ transform: `translateX(-${offset +10}px)` }}
             ></div>
             <div className="roomContainer2"></div>
             <div
               className="roomContainer3"
-              style={{ transform: `translateX(${offset + 10}px)` }}
+              style={{ transform: `translateX(${offset + 20 }px)` }}
             ></div>
           </div>
         </div>
@@ -363,7 +354,7 @@ function Home() {
 
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    News     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section id="news" className="mt-5 mb-5">
+      {/* <section id="news" className="mt-5 mb-5">
         <h2 className="text-center space-letter mb-3">News</h2>
         <div className="container">
           <div className="row justify-content-center mt-4 g-4 ">
@@ -448,7 +439,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* =====================================     ↑ ↑ ↑ ↑ ↑    News     ↑ ↑ ↑ ↑ ↑    ====================================== */}
     </>
