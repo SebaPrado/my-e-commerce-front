@@ -5,7 +5,9 @@ function Shop() {
     <>
       <section className="shop-section">
         <div className="container mb-4">
-          <h2 className="text-center space-letter"> Our Products</h2>
+          <div className="my-5">
+          <h2 className="text-center space-letter ourProducts"> Our Products</h2>
+          </div>
           <ProductList />
         </div>
       </section>

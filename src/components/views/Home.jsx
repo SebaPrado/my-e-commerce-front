@@ -134,16 +134,16 @@ function Home() {
       </div> */}
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section className="mt-5">
-        <div className="newreleasesText mt-5">
-          <p className="parrafoInicial">
-            "Unearth the echoes of alternative and timeless melodies, where each
+      <section className="mt-5 ">
+        <div className="newreleasesText mt-5" >
+          <p className="parrafoInicial ourProducts ">
+            "Unearth the echoes of timeless melodies, where each
             note tells a story"
           </p>
         </div>
         <div className="  swiperSlide" ref={projectRef}>
           <h2
-            className={`text-center space-letter newReleasesH2 ${
+            className={`text-center space-letter newReleasesH2  ${
               isVisible[1] ? "slide-left" : ""
             }`}
             ref={titleRefs[1]}
@@ -151,7 +151,7 @@ function Home() {
             New Releases
           </h2>
         </div>
-        <div className="container py-3 newReleasesDiv ">
+        <div className="container py-3 newReleasesDiv redBorder ">
           <Swiper
             breakpoints={{
               0: {
@@ -183,13 +183,13 @@ function Home() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className="mySwiper pb-5 borde px-1 mx-1"
+            className=" pb-5 borde px-1 mx-1 greenBorder"
           >
             {productList
               .filter((product) => product.featured === true)
               .map((product) => (
                 <SwiperSlide
-                  className=" my-4 very-small-hover newReleases "
+                  className=" my-4 very-small-hover newReleases blueBorder "
                   key={product.id}
                 >
                   <Product product={product} featured={true} />
@@ -252,40 +252,47 @@ function Home() {
 
       <section id="shop-by-category" className="mt-5 mb-5 ">
         <h2
-          className={`text-center space-letter newReleasesH2 tituloEchoesThroughTime `}
+          className={` text-center space-letter newReleasesH2 tituloEchoesThroughTime `}
           ref={titleRefs[2]}
         >
           Shop by Category
         </h2>
 
-        <div className="container">
+        <div className="container py-3 newReleasesDiv ">
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            spaceBetween={1}
-            slidesPerView={3}
             breakpoints={{
               0: {
                 slidesPerView: 1,
               },
-              768: {
+              576: {
                 slidesPerView: 2,
               },
               1000: {
                 slidesPerView: 3,
               },
             }}
-            loop={true}
-            autoplay={{
-              delay: 7000,
-              disableOnInteraction: false,
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={false}
+            loop={false}
+            speed={1000}
+            coverflowEffect={{
+              rotate: 12,
+              stretch: 0,
+              depth: 16,
+              modifier: -1,
+              slideShadows: false,
             }}
-            speed={7000}
             pagination={{ clickable: true }}
-            className=" pb-3"
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="mySwiper pb-5 borde px-1 mx-1"
           >
             {categories.map((category) => (
-              <SwiperSlide key={category.id}>
-                <div className="px-5 py-5 shop-category-img very-small-hover">
+              <SwiperSlide
+                className=" my-4 very-small-hover newReleases "
+                key={category.id}
+              >
+                <div className="px-5 py-5  very-small-hover ">
                   <Link
                     to={`products/categories/${category.id}`}
                     className="text-decoration-none"
@@ -296,7 +303,7 @@ function Home() {
                           category.image
                         }`}
                         className="card-img-top"
-                        alt=""
+                        alt=" hola"
                       />
                       <div className="card-body text-center fw-bold">
                         <span className="text-uppercase">{category.name}</span>
@@ -320,7 +327,7 @@ function Home() {
 
       <section>
         <h2
-          className={`text-center space-letter roomH2 desaparecerScroll `}
+          className={`  text-center space-letter roomH2 desaparecerScroll `}
           ref={titleRefs[3]}
         >
           The Listening Room

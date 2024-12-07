@@ -23,6 +23,11 @@
   flex: 1;
 }
 
+h2{
+  font-size: 24px;
+  letter-spacing: 34px !important ;
+}
+
 .snap-mid-section {
   text-align: center;
   scroll-snap-align: start;
@@ -497,10 +502,8 @@
   transform: translate(-50%, -50%);
   max-width: 25%;
   z-index: 3;
-   /* border: blueviolet 2px solid; */
+  /* border: blueviolet 2px solid; */
 }
-
- 
 
 /* =============     /\    Logo hero   /\   ========   */
 
@@ -767,20 +770,21 @@
 }
 
 .newReleases {
-  background: rgba(80, 67, 36, 0.096);
-  box-shadow: 0 8px 32px 0 rgba(31, 31, 49, 0.37);
+  /* background: rgba(80, 67, 36, 0.096); */
+  /* box-shadow: 0 8px 32px 0 rgba(31, 31, 49, 0.37); */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   /* border-radius: 10px !important; */
-  border: 1px solid rgba(253, 182, 75, 0.199);
+  /* border: 1px solid rgba(253, 182, 75, 0.199); */
   /* border: 2px red solid; */
 }
 
 @media (max-width: 575px) {
   .borde {
-    /* border: violet 2px solid; */
-    max-width: 260px; /* Limitar el ancho máximo al 100% */
-    box-sizing: border-box; /* Asegurarse de que el padding y el border se incluyan en el ancho total */
+    max-width: 50vw;
+    max-height: contain
+;
+    /* box-sizing: border-box !important;  */
   }
 }
 
@@ -801,8 +805,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: start;
-  /* border: 30px solid red; */
-
+  border: 3px solid red !important;
 }
 
 .product {
@@ -1253,8 +1256,21 @@
 }
 .productContainer {
   /* border: red 1px solid; */
-  background-color:rgba(255, 255, 255, 0.986);
+  background-color: rgba(255, 255, 255, 0.986);
   width: 100%;
+  transition: transform 1s ease;
+  border-radius: 3px;
+}
+
+.productContainer:hover {
+  transform: scale(1.05);
+  /* border: #464742 1px solid; */
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ourProducts{
+  color: rgb(1, 1, 1);
+  text-shadow: 0px 0px 40px  rgb(1, 1, 1);
 }
 
 .shop-section {
@@ -1509,11 +1525,34 @@
   height: 16.7px !important;
 }
 
+/*  ====================           \/         SWIPER      \/         ============================= */
+
 .swiper-pagination-bullet {
-  background-color: rgb(5, 5, 5);
-  height: 13px;
-  width: 13px;
+  background-color: rgb(152, 152, 152);
+  height: 10px;
+  width: 10px;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
 }
+
+/* .swiperSlide {
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: gray;
+} */
+
+/* .swiperSlide {
+  margin-top: 4rem;
+} */
+/* @media ( max-width: 768px)  {
+  .swiperSlide {
+    max-height: 450px;
+  }
+} */
+
+
+/*  ====================           /\         SWIPER      /\         ============================= */
+
 .cart-btn-icon {
   margin-left: 8px;
   width: 16px;
@@ -1633,14 +1672,6 @@
   transition: 1s;
 }
 
-/* .swiperSlide {
-  margin-top: 4rem;
-} */
-/* @media ( max-width: 768px)  {
-  .swiperSlide {
-    max-height: 450px;
-  }
-} */
 
 .product-info-div {
   padding-right: 5%;
@@ -1658,40 +1689,34 @@
 @media (width<=868px) {
   .roomH2 {
     margin-top: 7rem;
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
     border: green 2px solid;
-
   }
 }
 
 /* ========================  \/          Parrafo inicial           \/       ==============  */
 
-
-.parrafoInicial{
+.parrafoInicial {
   margin-top: 16vw;
-  margin-bottom:19vw ;
+  margin-bottom: 19vw;
   /* background-color: wheat; */
   letter-spacing: 3px !important;
   font-size: 29px !important;
   font-weight: 500 !important;
   /* font-stretch: expanded !important; */
-
-;
-
 }
 
 /* ========================      /\          Parrafo inicial      /\       ==============  */
 
-
 /* ========================  \/          Echoes Through Time          \/       ==============  */
 
 @media (width>=768px) {
-  .sectionEchoes{
+  .sectionEchoes {
     margin-top: 12rem !important;
   }
 }
 
-@media (576px >= width >=767px)  {
+@media (576px >= width >=767px) {
   .sectionEchoes {
     margin-top: 9rem !important; /* Tablet */
   }
@@ -1702,8 +1727,6 @@
     margin-top: 6rem !important; /* Phone */
   }
 }
-
-
 
 .ourStoryContainer {
   display: flex;
@@ -1874,11 +1897,7 @@
   box-shadow: 0 0 18px rgb(255, 255, 253);
 }
 
-.swiperSlide {
-  max-width: 100%;
-  box-sizing: border-box;
-  /* background-color: gray; */
-}
+
 .roomText {
   padding-left: 75px;
   padding-right: 75px;
@@ -1957,11 +1976,14 @@
   }
 }
 
-@media (575px <= width < 768px) {
+@media (275px <= width < 768px) {
   .newReleasesDiv {
     border: pink 2px solid;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: center;
+    /* margin-inline: 1rem; */
   }
 }
 
@@ -1969,35 +1991,58 @@
   border-radius: 5px;
 }
 
-/*   animaciones scroll css video tutorial Kevin Powell  */
+.redBorder {
+  border: red 2px solid;
+}
 
-.fadeOut{
+.greenBorder {
+  border: green 2px solid !important;
+  /* padding-inline: 5rem !important; */
+  
+}
+
+.blueBorder{
+  border: blue 2px solid !important;
+  margin-inline: 0rem;
+}
+
+/* ===========              animaciones scroll css video tutorial Kevin Powell    =====   */
+
+.fadeOut {
   animation: fade-out ease-out;
   animation-timeline: view();
-  animation-range: exit ; 
-   /* border: yellow 2px solid; */
+  animation-range: exit;
+  /* border: yellow 2px solid; */
 
   /* animation: header-image-animation linear;
   animation-timeline: view(); */
 }
 
 @keyframes fade-out {
-  70%, 100% {opacity: 0; scale: 3;}
+  70%,
+  100% {
+    opacity: 0;
+    scale: 3;
+  }
 }
 /* @keyframes header-image-animation {
   25% {opacity: 1;}
   80% {opacity: 0;}
 } */
 
-.fadeIn{
+.fadeIn {
   animation: fade-in ease-in;
   animation-timeline: view();
-  animation-range: start  ;
+  animation-range: start;
   animation-fill-mode: both;
 }
 @keyframes fade-in {
-  0%{opacity: 0 ; scale: 1.4}
-  20%{opacity: 1; scale: 1;}
+  0% {
+    opacity: 0;
+    scale: 1.4;
+  }
+  20% {
+    opacity: 1;
+    scale: 1;
+  }
 }
-
-
