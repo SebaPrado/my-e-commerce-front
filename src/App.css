@@ -23,7 +23,7 @@
   flex: 1;
 }
 
-h2{
+h2 {
   font-size: 24px;
   letter-spacing: 34px !important ;
 }
@@ -770,24 +770,72 @@ h2{
 }
 
 .newReleases {
-  /* background: rgba(80, 67, 36, 0.096); */
-  /* box-shadow: 0 8px 32px 0 rgba(31, 31, 49, 0.37); */
+
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  /* border-radius: 10px !important; */
-  /* border: 1px solid rgba(253, 182, 75, 0.199); */
-  /* border: 2px red solid; */
+ 
 }
 
-.catCards{
-  border: wheat 2px solid;
+/* ====================            responsividad   categories slider   \/  ============== */
+
+@media (width >= 1200px) {
+  .catCards {
+    /* border: pink 20px solid !important; */
+      } }
+
+@media (width >=768px) {
+  .catCards3 {
+    border: orange 2px solid;
+  }
+  .catCards2 {
+    display: flex;
+    justify-content: center;
+    border: blue solid 2px;
+    padding: 5vw !important;
+    /* width: 33% !important; */
+  }
+  .catCards {
+    border: red 2px solid;
+    max-width: 30vw;
+    max-height: 400px;
+    /* margin-right: 40px !important; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+  }
+  .catCards img {
+    border: red 2px solid;
+    max-width: 210px;
+    max-height: 320px;
+    /* margin-right: 40px !important; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+  }
 }
+
+@media (width >=650px) {
+  .catCards {
+    border: yellow 1px solid;
+    width: 100% !important;
+    /* max-height:100% !important; */
+  }
+  .catCards2 {
+    display: flex;
+    justify-content: center;
+    border: blue solid 2px;
+    padding: 3vw !important;
+    width: 100% !important;
+  }
+}
+
+
+/* ====================            responsividad   categories slider   /\  ============== */
+
+
 
 @media (max-width: 575px) {
   .borde {
     max-width: 50vw;
-    max-height: contain
-;
+    max-height: contain;
     /* box-sizing: border-box !important;  */
   }
 }
@@ -1272,9 +1320,9 @@ h2{
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
 }
 
-.ourProducts{
+.ourProducts {
   color: rgb(1, 1, 1);
-  text-shadow: 0px 0px 40px  rgb(1, 1, 1);
+  text-shadow: 0px 0px 40px rgb(1, 1, 1);
 }
 
 .shop-section {
@@ -1496,7 +1544,6 @@ h2{
 .card-body {
   background-color: rgb(255, 255, 255);
   padding-block: 12px;
-  
 }
 
 @media (max-width: 991px) {
@@ -1555,7 +1602,6 @@ h2{
     max-height: 450px;
   }
 } */
-
 
 /*  ====================           /\         SWIPER      /\         ============================= */
 
@@ -1677,7 +1723,6 @@ h2{
 .very-small-hover:not(:hover) {
   transition: 1s;
 }
-
 
 .product-info-div {
   padding-right: 5%;
@@ -1903,7 +1948,6 @@ h2{
   box-shadow: 0 0 18px rgb(255, 255, 253);
 }
 
-
 .roomText {
   padding-left: 75px;
   padding-right: 75px;
@@ -2000,18 +2044,15 @@ h2{
 .redBorder {
   border: red 2px solid;
   /* padding-inline: 0rem !important; */
-
 }
 
 .greenBorder {
   border: green 2px solid !important;
   padding-inline: 0rem !important;
   marging-inline: 0rem !important;
-
-  
 }
 
-.blueBorder{
+.blueBorder {
   border: blue 2px solid !important;
   /* margin-inline: 0rem; */
 }

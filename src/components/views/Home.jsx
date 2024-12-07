@@ -135,10 +135,10 @@ function Home() {
       {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
       <section className="mt-5 ">
-        <div className="newreleasesText mt-5" >
+        <div className="newreleasesText mt-5">
           <p className="parrafoInicial ourProducts ">
-            "Unearth the echoes of timeless melodies, where each
-            note tells a story"
+            "Unearth the echoes of timeless melodies, where each note tells a
+            story"
           </p>
         </div>
         <div className="  swiperSlide" ref={projectRef}>
@@ -233,7 +233,6 @@ function Home() {
                   discovery anew.
                 </p>{" "}
               </div>
-          
             </div>
           </div>
         </div>
@@ -277,14 +276,14 @@ function Home() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className=" pb-5 borde px-1 mx-1 " 
+            className=" pb-5 borde px-1 mx-1 catCards3"
           >
             {categories.map((category) => (
               <SwiperSlide
-                className=" my-4 very-small-hover newReleases "
+                className=" my-4 very-small-hover newReleases catCards2 "
                 key={category.id}
               >
-                                <div className="px-3 px-md-3 px-lg-5 py-5 mx-lg-3 very-small-hover catCards  ">
+                <div className=" very-small-hover catCards   ">
                   <Link
                     to={`products/categories/${category.id}`}
                     className="text-decoration-none"
@@ -294,7 +293,7 @@ function Home() {
                         src={`${import.meta.env.VITE_IMG_URL}/categories/${
                           category.image
                         }`}
-                        className="card-img-top"
+                        className="card-img-top "
                         alt=" hola"
                       />
                       <div className="card-body text-center fw-bold text-black ">
