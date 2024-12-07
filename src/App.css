@@ -779,6 +779,10 @@ h2{
   /* border: 2px red solid; */
 }
 
+.catCards{
+  border: wheat 2px solid;
+}
+
 @media (max-width: 575px) {
   .borde {
     max-width: 50vw;
@@ -1490,7 +1494,9 @@ h2{
 }
 
 .card-body {
-  background-color: rgb(233, 196, 106, 0.2);
+  background-color: rgb(255, 255, 255);
+  padding-block: 12px;
+  
 }
 
 @media (max-width: 991px) {
@@ -1978,9 +1984,9 @@ h2{
 
 @media (275px <= width < 768px) {
   .newReleasesDiv {
-    border: pink 2px solid;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    /* border: pink 2px solid; */
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
     display: flex;
     justify-content: center;
     /* margin-inline: 1rem; */
@@ -1993,17 +1999,21 @@ h2{
 
 .redBorder {
   border: red 2px solid;
+  /* padding-inline: 0rem !important; */
+
 }
 
 .greenBorder {
   border: green 2px solid !important;
-  /* padding-inline: 5rem !important; */
+  padding-inline: 0rem !important;
+  marging-inline: 0rem !important;
+
   
 }
 
 .blueBorder{
   border: blue 2px solid !important;
-  margin-inline: 0rem;
+  /* margin-inline: 0rem; */
 }
 
 /* ===========              animaciones scroll css video tutorial Kevin Powell    =====   */
@@ -2039,9 +2049,9 @@ h2{
 @keyframes fade-in {
   0% {
     opacity: 0;
-    scale: 1.4;
+    scale: 1.2;
   }
-  20% {
+  27% {
     opacity: 1;
     scale: 1;
   }

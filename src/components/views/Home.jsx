@@ -175,8 +175,8 @@ function Home() {
             // }}
             speed={1000}
             coverflowEffect={{
-              rotate: 12,
-              stretch: 0,
+              rotate: 5,
+              stretch: 15,
               depth: 16,
               modifier: -1,
               slideShadows: false,
@@ -233,15 +233,7 @@ function Home() {
                   discovery anew.
                 </p>{" "}
               </div>
-              {/* <p>
-        Through the decades, as trends have come and gone, our mission
-        remains steadfast: to preserve the art of analog sound. Within
-        these walls lies a treasure trove of history, from the crackling
-        blues that defined a generation to the symphonies that stirred
-        hearts worldwide. For us, every vinyl is not just a product—it is
-        a story waiting to be told, a memory to be made, and a piece of
-        history to be cherished.
-      </p> */}
+          
             </div>
           </div>
         </div>
@@ -258,7 +250,7 @@ function Home() {
           Shop by Category
         </h2>
 
-        <div className="container py-3 newReleasesDiv ">
+        <div className="container py-3 newReleasesDiv  ">
           <Swiper
             breakpoints={{
               0: {
@@ -277,7 +269,7 @@ function Home() {
             loop={false}
             speed={1000}
             coverflowEffect={{
-              rotate: 12,
+              rotate: 0,
               stretch: 0,
               depth: 16,
               modifier: -1,
@@ -285,19 +277,19 @@ function Home() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay]}
-            className="mySwiper pb-5 borde px-1 mx-1"
+            className=" pb-5 borde px-1 mx-1 " 
           >
             {categories.map((category) => (
               <SwiperSlide
                 className=" my-4 very-small-hover newReleases "
                 key={category.id}
               >
-                <div className="px-5 py-5  very-small-hover ">
+                                <div className="px-3 px-md-3 px-lg-5 py-5 mx-lg-3 very-small-hover catCards  ">
                   <Link
                     to={`products/categories/${category.id}`}
                     className="text-decoration-none"
                   >
-                    <div className="card ">
+                    <div className="  ">
                       <img
                         src={`${import.meta.env.VITE_IMG_URL}/categories/${
                           category.image
@@ -305,7 +297,7 @@ function Home() {
                         className="card-img-top"
                         alt=" hola"
                       />
-                      <div className="card-body text-center fw-bold">
+                      <div className="card-body text-center fw-bold text-black ">
                         <span className="text-uppercase">{category.name}</span>
                       </div>
                     </div>
@@ -385,7 +377,7 @@ function Home() {
                   <span className="fw-lighter text-center date-font-size text-uppercase">
                     Ago 15, 2024
                   </span>
-                  <p className="text-uppercase fw-bold text-black text-center mt-3">
+                  <p className=" fw-bold text-black text-center mt-3">
                     The soul of blues reborn under midnight lights
                   </p>
                 </div>
@@ -401,7 +393,7 @@ function Home() {
                   <span className="fw-lighter text-center date-font-size text-uppercase">
                     Nov 07, 2024
                   </span>
-                  <p className="text-uppercase fw-bold text-black text-center mt-3">
+                  <p className=" fw-bold text-black text-center mt-3">
                     The vintage cassette returns: nostalgia in every rewind
                   </p>
                 </div>
@@ -414,10 +406,10 @@ function Home() {
                   <img className="img-fluid border" src={`/img/6.jpg`} />
                 </div>
                 <div className="d-flex flex-column align-items-center mt-3">
-                  <span className="fw-lighter text-center date-font-size text-uppercase">
+                  <span className="fw-lighter text-center date-font-size  text-uppercase">
                     Dec 02, 2024
                   </span>
-                  <p className="text-uppercase fw-bold text-black text-center mt-3">
+                  <p className=" fw-bold text-black text-center mt-3">
                     An unforgettable night of magic at Radio City.
                   </p>
                 </div>
@@ -430,10 +422,10 @@ function Home() {
                   <img className="img-fluid border" src={`/img/8.jpg`} />
                 </div>
                 <div className="d-flex flex-column align-items-center mt-3">
-                  <span className="fw-lighter text-center date-font-size text-uppercase">
+                  <span className="fw-lighter text-center date-font-size text-uppercase ">
                     Oct 25, 2024
                   </span>
-                  <p className="text-uppercase fw-bold text-black text-center mt-3">
+                  <p className=" fw-bold text-black text-center mt-3">
                     Electric riffs and passion: the heart of a rock soloist.
                   </p>
                 </div>
@@ -446,10 +438,10 @@ function Home() {
                   <img className="img-fluid border" src={`/img/3.jpg`} />
                 </div>
                 <div className="d-flex flex-column align-items-center mt-3">
-                  <span className="fw-lighter text-center date-font-size text-uppercase">
+                  <span className="fw-lighter text-center date-font-size text-uppercase  ">
                     Nov 12, 2024
                   </span>
-                  <p className="text-uppercase fw-bold text-black text-center mt-3">
+                  <p className=" fw-bold text-black text-center mt-3">
                     Sublime improvisation: jazz resonates with a free spirit.
                   </p>
                 </div>
