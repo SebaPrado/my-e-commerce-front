@@ -1828,18 +1828,14 @@ h2 {
     height: auto;
     margin-bottom: 40px;
     order: -1;
-    border: rgb(9, 0, 128) 2px solid;
+    /* border: rgb(9, 0, 128) 2px solid; */
   }
   .ourStoryText {
     margin-top: 0px;
     padding: 1rem;
-    /* padding-right: 0px !important;
-    padding-left: 0px !important; */
-    /* margin-left: -25px !important; */
     width: 100%;
   }
   .ourStoryContainer {
-    /* padding: 30px !important; */
     justify-content: center;
     margin-bottom: 0.1rem !important;
   }
