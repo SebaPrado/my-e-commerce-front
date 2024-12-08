@@ -232,7 +232,7 @@ function Home() {
 
         <section id="shop-by-category" className="mt-5 mb-5 ">
           <h2
-            className={` text-center space-letter newReleasesH2 transparent  `}
+            className={` text-center space-letter newReleasesH2 transparent margenesH2 mx-5 `}
             ref={titleRefs[2]}
           >
             Shop by Category
@@ -309,12 +309,12 @@ function Home() {
 
         <section>
           <h2
-            className={`  text-center space-letter roomH2  transparent `}
+            className={` mx-5 text-center space-letter roomH2  transparent margenesH2 `}
             ref={titleRefs[3]}
           >
             The Listening Room
           </h2>
-          <div className="roomFatherContainer">
+          <div className="roomFatherContainer margenesH2 ">
             <div className="roomText1">
               <div className="roomText2">
                 <p>

@@ -783,7 +783,7 @@
 
 @media (max-width: 768px) {
   .shopbycategoryDiv {
-    max-width: 57%;
+    max-width: 47%;
     /* border: yellow 2px solid; */
   }
   .shopbycategoryDiv img {
@@ -1391,13 +1391,10 @@
   font-size: 0.8rem;
 }
 
-/* .shop-by-category {
-  transition: transform 0.3s ease;
+.margenesH2{
+  margin-top: 20vw !important;
+  margin-bottom: 9vw !important;
 }
-
-.shop-by-category:hover {
-  transform: scale(1.05);
-} */
 
 .box-confirmation-success {
   display: flex;
@@ -1783,13 +1780,13 @@
 
 @media (width>=768px) {
   .sectionEchoes {
-    margin-top: 12rem !important;
+    margin-top: 11vw !important;
   }
 }
 
-@media (576px >= width >=767px) {
+@media (767px>= width >=576px   ) {
   .sectionEchoes {
-    margin-top: 9rem !important; /* Tablet */
+    margin-top: 8rem !important; /* Tablet */
   }
 }
 
@@ -1925,6 +1922,7 @@
 /* ========================      \/          The listening room       \/       ==============  */
 
 .roomFatherContainer {
+  margin-top: 10vw !important;
   margin-inline: 25px;
 }
 
