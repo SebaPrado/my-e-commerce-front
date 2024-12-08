@@ -232,7 +232,7 @@ function Home() {
 
         <section id="shop-by-category" className="mt-5 mb-5 ">
           <h2
-            className={` text-center space-letter newReleasesH2 transparent margenesH2 mx-5 `}
+            className={` text-center space-letter newReleasesH2 transparent margenesH2  `}
             ref={titleRefs[2]}
           >
             Shop by Category

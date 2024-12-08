@@ -1393,7 +1393,7 @@
 
 .margenesH2{
   margin-top: 20vw !important;
-  margin-bottom: 9vw !important;
+  margin-bottom: 5vw !important;
 }
 
 .box-confirmation-success {
@@ -2159,11 +2159,11 @@
 @keyframes transparent {
   0% {
     opacity: 0;
-    color: var(--color1);
+    color: rgb(187, 61, 3);
   }
-  40% {
-    opacity: 0.8;
-    color: #000000;
+  60% {
+    opacity: 0.7;
+    color: rgba(31, 26, 0, 0.993);
 
   }
   100%{
