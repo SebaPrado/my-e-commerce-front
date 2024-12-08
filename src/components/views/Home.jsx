@@ -136,8 +136,8 @@ function Home() {
         <section className="mt-5 ">
           <div className="newreleasesText mt-5">
             <p className="parrafoInicial ourProducts ">
-              "Unearth the echoes of timeless melodies, where each note tells a
-              story"
+              " Unearth the echoes of timeless melodies, where each note tells a
+              story "
             </p>
           </div>
           <div className="  swiperSlide" ref={projectRef}>
