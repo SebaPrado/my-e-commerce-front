@@ -15,6 +15,11 @@
   flex-direction: column;
 }
 
+/* .masterDiv{
+  max-width: 100vw !important;
+  border: red 2px solid;
+} */
+
 .snap-height {
   height: 100vh;
 }
@@ -49,7 +54,7 @@ h2 {
   .snap-section {
     height: 100%;
     scroll-snap-align: none;
-    width: 100vw;
+    width: 98.6vw;
   }
 
   .last-snap-item {
@@ -94,7 +99,7 @@ h2 {
 
   .snap-section {
     scroll-snap-align: start;
-    height: 100svh;
+    height: 100vh;
     scroll-snap-stop: always;
   }
 
@@ -471,7 +476,7 @@ h2 {
 .video-player-container {
   position: relative;
   opacity: 0.9;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
@@ -778,7 +783,12 @@ h2 {
 
 .newReleasesDiv {
   /* border: pink 2px solid; */
-  width: 100vw;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderFatherContainer{
   display: flex;
   justify-content: center;
 }
@@ -1798,7 +1808,7 @@ h2 {
   width: 100%;
   height: 400px;
   padding: 5px 5px 5px 5px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-image: url("/img/music.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1895,6 +1905,10 @@ h2 {
 }
 
 /* ========================      \/          The listening room       \/       ==============  */
+
+.roomFatherContainer{
+  margin-inline: 25px;
+}
 
 .roomH2 {
   margin-top: 7rem;
@@ -2023,7 +2037,7 @@ h2 {
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
-    border: greenyellow 2px solid;
+    /* border: greenyellow 2px solid; */
     text-align: center;
     justify-content: center;
     align-items: center;

@@ -105,343 +105,349 @@ function Home() {
 
   return (
     <>
-      {/* <Link to="about">
-        <button className="button-to-about">ABOUT THIS PROJECT</button>
-      </Link> */}
+      <div className="masterDiv">
+        {/* <Link to="about">
+          <button className="button-to-about">ABOUT THIS PROJECT</button>
+        </Link> */}
 
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Hero     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+        {/* =====================================     ↓ ↓ ↓ ↓ ↓    Hero     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      {/* <div className="video-player-container fadeOut">
-        <video
-          src={video}
-          autoPlay
-          loop
-          muted
-          className="video-play"
-          playsInline
-        ></video>
-        <img
-          src="/img/equal-vision-logo.webp"
-          alt="Equal Vision Records Logo"
-          itemProp="logo"
-          className="overlay-image logoHero"
-        ></img>
-      </div> */}
-
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑    Hero     ↑ ↑ ↑ ↑ ↑    ====================================== */}
-      <div className="container">
-        <hr />
-      </div>
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
-
-      {/* <section className="mt-5 ">
-        <div className="newreleasesText mt-5">
-          <p className="parrafoInicial ourProducts ">
-            "Unearth the echoes of timeless melodies, where each note tells a
-            story"
-          </p>
+        <div className="video-player-container fadeOut">
+          <video
+            src={video}
+            autoPlay
+            loop
+            muted
+            className="video-play"
+            playsInline
+          ></video>
+          <img
+            src="/img/equal-vision-logo.webp"
+            alt="Equal Vision Records Logo"
+            itemProp="logo"
+            className="overlay-image logoHero"
+          ></img>
         </div>
-        <div className="  swiperSlide" ref={projectRef}>
-          <h2
-            className={`text-center space-letter newReleasesH2  ${
-              isVisible[1] ? "slide-left" : ""
-            }`}
-            ref={titleRefs[1]}
-          >
-            New Releases
-          </h2>
-        </div>
-        <div className=" py-3 newReleasesDiv  ">
-          <Swiper
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-              },
-              768: {
-                slidesPerView: 3,
-              },
-              1000: {
-                slidesPerView: 5,
-              },
-            }}
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={false}
-            // slidesPerView={3}
-            loop={false}
-            // autoplay={{
-            //   delay: 50,
-            //   disableOnInteraction: true,
-            // }}
-            speed={1000}
-            coverflowEffect={{
-              rotate: 5,
-              stretch: 15,
-              depth: 16,
-              modifier: -1,
-              slideShadows: false,
-            }}
-            pagination={{ clickable: true }}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
-            className=" pb-5 borde px-1 mx-1 "
-          >
-            {productList
-              .filter((product) => product.featured === true)
-              .map((product) => (
-                <SwiperSlide
-                  className=" my-4 very-small-hover newReleases  "
-                  key={product.id}
-                >
-                  <Product product={product} featured={true} />
-                </SwiperSlide>
-              ))}
-          </Swiper>
-        </div>
-      </section> */}
 
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑    New Releases       ↑ ↑ ↑ ↑ ↑    ====================================== */}
+        {/* =====================================     ↑ ↑ ↑ ↑ ↑    Hero     ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
-      {/* <div className="container mt-5">
-        <hr />
-      </div> */}
+        {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+        <section className="mt-5 ">
+          <div className="newreleasesText mt-5">
+            <p className="parrafoInicial ourProducts ">
+              "Unearth the echoes of timeless melodies, where each note tells a
+              story"
+            </p>
+          </div>
+          <div className="  swiperSlide" ref={projectRef}>
+            <h2
+              className={`text-center space-letter newReleasesH2  ${
+                isVisible[1] ? "slide-left" : ""
+              }`}
+              ref={titleRefs[1]}
+            >
+              New Releases
+            </h2>
+          </div>
+          <div className="sliderFatherContainer">
+            <div className=" py-3 newReleasesDiv  ">
+              <Swiper
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                  },
+                  1000: {
+                    slidesPerView: 5,
+                  },
+                }}
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={false}
+                // slidesPerView={3}
+                loop={false}
+                // autoplay={{
+                //   delay: 50,
+                //   disableOnInteraction: true,
+                // }}
+                speed={1000}
+                coverflowEffect={{
+                  rotate: 5,
+                  stretch: 15,
+                  depth: 16,
+                  modifier: -1,
+                  slideShadows: false,
+                }}
+                pagination={{ clickable: true }}
+                modules={[EffectCoverflow, Pagination, Autoplay]}
+                className=" pb-5 borde px-1 mx-1 "
+              >
+                {productList
+                  .filter((product) => product.featured === true)
+                  .map((product) => (
+                    <SwiperSlide
+                      className=" my-4 very-small-hover newReleases  "
+                      key={product.id}
+                    >
+                      <Product product={product} featured={true} />
+                    </SwiperSlide>
+                  ))}
+              </Swiper>
+            </div>
+          </div>
+        </section>
 
-      {/* <section className=" sectionEchoes">
-    
-        <div className="ourStoryContainer ">
-          <div className="echoesImage mt-5 ">
-            <div className="ourStoryText overlay-image">
-              <div className="">
-                <p className="fadeIn">
-                  Established in an era when melodies flowed not through wires
-                  but hearts, our store has been a sanctuary for the vinyl
-                  enthusiast since its humble beginnings. Beneath the warm glow
-                  of gaslit lamps, music lovers would gather to peruse shelves
-                  stacked high with records that whispered tales of passion,
-                  rebellion, and romance. Here, the air hums with nostalgia, as
-                  each groove carries the soul of an artist long past, awaiting
-                  discovery anew.
-                </p>{" "}
+        {/* =====================================     ↑ ↑ ↑ ↑ ↑    New Releases       ↑ ↑ ↑ ↑ ↑    ====================================== */}
+
+        {/* <div className="container mt-5">
+          <hr />
+        </div> */}
+
+        {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+
+        <section className=" sectionEchoes">
+          <div className="ourStoryContainer ">
+            <div className="echoesImage mt-5 ">
+              <div className="ourStoryText overlay-image">
+                <div className="">
+                  <p className="fadeIn">
+                    Established in an era when melodies flowed not through wires
+                    but hearts, our store has been a sanctuary for the vinyl
+                    enthusiast since its humble beginnings. Beneath the warm
+                    glow of gaslit lamps, music lovers would gather to peruse
+                    shelves stacked high with records that whispered tales of
+                    passion, rebellion, and romance. Here, the air hums with
+                    nostalgia, as each groove carries the soul of an artist long
+                    past, awaiting discovery anew.
+                  </p>{" "}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section> */}
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
+        </section>
+        {/* =====================================     ↑ ↑ ↑ ↑ ↑  Echoes Through Time        ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+        {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      <section id="shop-by-category" className="mt-5 mb-5 ">
-        <h2
-          className={` text-center space-letter newReleasesH2  `}
-          ref={titleRefs[2]}
-        >
-          Shop by Category
-        </h2>
-
-        <div className=" py-3 newReleasesDiv  ">
-          <Swiper
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-              },
-              576: {
-                slidesPerView: 2,
-              },
-              1000: {
-                slidesPerView: 3,
-              },
-            }}
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={false}
-            loop={true}
-            speed={1000}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 16,
-              modifier: -1,
-              slideShadows: false,
-            }}
-            pagination={{ clickable: true }}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
-            className=" pb-5 borde px-1 mx-1 catCards1"
+        {/* <section id="shop-by-category" className="mt-5 mb-5 ">
+          <h2
+            className={` text-center space-letter newReleasesH2  `}
+            ref={titleRefs[2]}
           >
-            {categories.map((category) => (
-              <SwiperSlide
-                className=" my-4 very-small-hover newReleases catCards2 "
-                key={category.id}
-              >
-                <div className=" very-small-hover catCards3   ">
-                  <Link
-                    to={`products/categories/${category.id}`}
-                    className="text-decoration-none"
-                  >
-                    <div className="  ">
-                      <img
-                        src={`${import.meta.env.VITE_IMG_URL}/categories/${
-                          category.image
-                        }`}
-                        className="card-img-top "
-                        alt=" hola"
-                      />
-                      <div className="card-body text-center fw-bold text-black ">
-                        <span className="text-uppercase">{category.name}</span>
+            Shop by Category
+          </h2>
+
+          <div className=" py-3 newReleasesDiv  ">
+            <Swiper
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                576: {
+                  slidesPerView: 2,
+                },
+                1000: {
+                  slidesPerView: 3,
+                },
+              }}
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={false}
+              loop={true}
+              speed={1000}
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 16,
+                modifier: -1,
+                slideShadows: false,
+              }}
+              pagination={{ clickable: true }}
+              modules={[EffectCoverflow, Pagination, Autoplay]}
+              className=" pb-5 borde px-1 mx-1 catCards1"
+            >
+              {categories.map((category) => (
+                <SwiperSlide
+                  className=" my-4 very-small-hover newReleases catCards2 "
+                  key={category.id}
+                >
+                  <div className=" very-small-hover catCards3   ">
+                    <Link
+                      to={`products/categories/${category.id}`}
+                      className="text-decoration-none"
+                    >
+                      <div className="  ">
+                        <img
+                          src={`${import.meta.env.VITE_IMG_URL}/categories/${
+                            category.image
+                          }`}
+                          className="card-img-top "
+                          alt=" hola"
+                        />
+                        <div className="card-body text-center fw-bold text-black ">
+                          <span className="text-uppercase">
+                            {category.name}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </section>
-
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
-
-      <div className="container mt-5">
-        <hr />
-      </div>
-
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
-
-      <section>
-        <h2
-          className={`  text-center space-letter roomH2  `}
-          ref={titleRefs[3]}
-        >
-          The Listening Room
-        </h2>
-        <div className="roomText1">
-          <div className="roomText2">
-            <p>
-              Beyond the storefront lies a secret haven—the Listening Room,
-              where the magic of vinyl truly comes alive. With rich wooden
-              panels and plush chairs worn soft by decades of visitors, this
-              space invites patrons to escape the chaos of the modern world and
-              lose themselves in the warmth of analog sound. Each needle drop is
-              a ceremony as every spin a journey through time.
-            </p>{" "}
-            <p>
-              The Listening Room has witnessed countless moments of discovery: a
-              young collector’s first encounter with jazz. A seasoned enthusiast
-              rekindling their connection to a forgotten favorite... Here, the
-              connection to music transcends the ordinary, transforming each
-              visit into an intimate encounter with the heart and soul of sound.
-              Step inside, and let the vinyl guide you home.
-            </p>
+                    </Link>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-          <div className="roomContainer ">
-            <div
-              className="roomContainer1"
-              style={{ transform: `translateX(-${offset +10}px)` }}
-            ></div>
-            <div className="roomContainer2"></div>
-            <div
-              className="roomContainer3"
-              style={{ transform: `translateX(${offset + 20 }px)` }}
-            ></div>
-          </div>
-        </div>
-        <div className="container mt-5">
+        </section> */}
+
+        {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
+
+        {/* <div className="container mt-5">
           <hr />
-        </div>
-      </section>
+        </div> */}
 
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑   relleno        ↑ ↑ ↑ ↑ ↑    ====================================== */}
+        {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-      {/* =====================================     ↓ ↓ ↓ ↓ ↓    News     ↓ ↓ ↓ ↓ ↓    ====================================== */}
-
-      {/* <section id="news" className="mt-5 mb-5">
-        <h2 className="text-center space-letter mb-3">News</h2>
-        <div className="container">
-          <div className="row justify-content-center mt-4 g-4 ">
-            <div className="col-md-6 col-lg-4  " onClick={handleToast}>
-              <Link className="text-decoration-none text-black ">
-                <div className="small-hover ">
-                  <img className="img-fluid border" src={`/img/7.jpg`} />
-                </div>
-                <div className="d-flex flex-column align-items-center mt-3 ">
-                  <span className="fw-lighter text-center date-font-size text-uppercase">
-                    Ago 15, 2024
-                  </span>
-                  <p className=" fw-bold text-black text-center mt-3">
-                    The soul of blues reborn under midnight lights
-                  </p>
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-md-6 col-lg-4 " onClick={handleToast}>
-              <Link className="text-decoration-none text-black ">
-                <div className="small-hover">
-                  <img className="img-fluid border" src={"/img/5.jpg"} />
-                </div>
-                <div className="d-flex flex-column align-items-center mt-3">
-                  <span className="fw-lighter text-center date-font-size text-uppercase">
-                    Nov 07, 2024
-                  </span>
-                  <p className=" fw-bold text-black text-center mt-3">
-                    The vintage cassette returns: nostalgia in every rewind
-                  </p>
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-md-6 col-lg-4 " onClick={handleToast}>
-              <Link className="text-decoration-none text-black ">
-                <div className="small-hover">
-                  <img className="img-fluid border" src={`/img/6.jpg`} />
-                </div>
-                <div className="d-flex flex-column align-items-center mt-3">
-                  <span className="fw-lighter text-center date-font-size  text-uppercase">
-                    Dec 02, 2024
-                  </span>
-                  <p className=" fw-bold text-black text-center mt-3">
-                    An unforgettable night of magic at Radio City.
-                  </p>
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-md-6 col-lg-4 " onClick={handleToast}>
-              <Link className="text-decoration-none text-black ">
-                <div className="small-hover">
-                  <img className="img-fluid border" src={`/img/8.jpg`} />
-                </div>
-                <div className="d-flex flex-column align-items-center mt-3">
-                  <span className="fw-lighter text-center date-font-size text-uppercase ">
-                    Oct 25, 2024
-                  </span>
-                  <p className=" fw-bold text-black text-center mt-3">
-                    Electric riffs and passion: the heart of a rock soloist.
-                  </p>
-                </div>
-              </Link>
-            </div>
-
-            <div className="col-md-6 col-lg-4 " onClick={handleToast}>
-              <Link className="text-decoration-none text-black ">
-                <div className="small-hover">
-                  <img className="img-fluid border" src={`/img/3.jpg`} />
-                </div>
-                <div className="d-flex flex-column align-items-center mt-3">
-                  <span className="fw-lighter text-center date-font-size text-uppercase  ">
-                    Nov 12, 2024
-                  </span>
-                  <p className=" fw-bold text-black text-center mt-3">
-                    Sublime improvisation: jazz resonates with a free spirit.
-                  </p>
-                </div>
-              </Link>
+        <section>
+          <h2
+            className={`  text-center space-letter roomH2  `}
+            ref={titleRefs[3]}
+          >
+            The Listening Room
+          </h2>
+          <div className="roomFatherContainer">
+            <div className="roomText1">
+              <div className="roomText2">
+                <p>
+                  Beyond the storefront lies a secret haven—the Listening Room,
+                  where the magic of vinyl truly comes alive. With rich wooden
+                  panels and plush chairs worn soft by decades of visitors, this
+                  space invites patrons to escape the chaos of the modern world
+                  and lose themselves in the warmth of analog sound. Each needle
+                  drop is a ceremony as every spin a journey through time.
+                </p>{" "}
+                <p>
+                  The Listening Room has witnessed countless moments of
+                  discovery: a young collector’s first encounter with jazz. A
+                  seasoned enthusiast rekindling their connection to a forgotten
+                  favorite... Here, the connection to music transcends the
+                  ordinary, transforming each visit into an intimate encounter
+                  with the heart and soul of sound. Step inside, and let the
+                  vinyl guide you home.
+                </p>
+              </div>
+              <div className="roomContainer ">
+                <div
+                  className="roomContainer1"
+                  style={{ transform: `translateX(-${offset + 10}px)` }}
+                ></div>
+                <div className="roomContainer2"></div>
+                <div
+                  className="roomContainer3"
+                  style={{ transform: `translateX(${offset + 20}px)` }}
+                ></div>
+              </div>
             </div>
           </div>
-        </div>
-      </section> */}
+          <div className="container mt-5">
+            <hr />
+          </div>
+        </section>
 
-      {/* =====================================     ↑ ↑ ↑ ↑ ↑    News     ↑ ↑ ↑ ↑ ↑    ====================================== */}
+        {/* =====================================     ↑ ↑ ↑ ↑ ↑   relleno        ↑ ↑ ↑ ↑ ↑    ====================================== */}
+
+        {/* =====================================     ↓ ↓ ↓ ↓ ↓    News     ↓ ↓ ↓ ↓ ↓    ====================================== */}
+
+        <section id="news" className="mt-5 mb-5">
+          <h2 className="text-center space-letter mb-3">News</h2>
+          <div className="container">
+            <div className="row justify-content-center mt-4 g-4 ">
+              <div className="col-md-6 col-lg-4  " onClick={handleToast}>
+                <Link className="text-decoration-none text-black ">
+                  <div className="small-hover ">
+                    <img className="img-fluid border" src={`/img/7.jpg`} />
+                  </div>
+                  <div className="d-flex flex-column align-items-center mt-3 ">
+                    <span className="fw-lighter text-center date-font-size text-uppercase">
+                      Ago 15, 2024
+                    </span>
+                    <p className=" fw-bold text-black text-center mt-3">
+                      The soul of blues reborn under midnight lights
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="col-md-6 col-lg-4 " onClick={handleToast}>
+                <Link className="text-decoration-none text-black ">
+                  <div className="small-hover">
+                    <img className="img-fluid border" src={"/img/5.jpg"} />
+                  </div>
+                  <div className="d-flex flex-column align-items-center mt-3">
+                    <span className="fw-lighter text-center date-font-size text-uppercase">
+                      Nov 07, 2024
+                    </span>
+                    <p className=" fw-bold text-black text-center mt-3">
+                      The vintage cassette returns: nostalgia in every rewind
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="col-md-6 col-lg-4 " onClick={handleToast}>
+                <Link className="text-decoration-none text-black ">
+                  <div className="small-hover">
+                    <img className="img-fluid border" src={`/img/6.jpg`} />
+                  </div>
+                  <div className="d-flex flex-column align-items-center mt-3">
+                    <span className="fw-lighter text-center date-font-size  text-uppercase">
+                      Dec 02, 2024
+                    </span>
+                    <p className=" fw-bold text-black text-center mt-3">
+                      An unforgettable night of magic at Radio City.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="col-md-6 col-lg-4 " onClick={handleToast}>
+                <Link className="text-decoration-none text-black ">
+                  <div className="small-hover">
+                    <img className="img-fluid border" src={`/img/8.jpg`} />
+                  </div>
+                  <div className="d-flex flex-column align-items-center mt-3">
+                    <span className="fw-lighter text-center date-font-size text-uppercase ">
+                      Oct 25, 2024
+                    </span>
+                    <p className=" fw-bold text-black text-center mt-3">
+                      Electric riffs and passion: the heart of a rock soloist.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="col-md-6 col-lg-4 " onClick={handleToast}>
+                <Link className="text-decoration-none text-black ">
+                  <div className="small-hover">
+                    <img className="img-fluid border" src={`/img/3.jpg`} />
+                  </div>
+                  <div className="d-flex flex-column align-items-center mt-3">
+                    <span className="fw-lighter text-center date-font-size text-uppercase  ">
+                      Nov 12, 2024
+                    </span>
+                    <p className=" fw-bold text-black text-center mt-3">
+                      Sublime improvisation: jazz resonates with a free spirit.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* =====================================     ↑ ↑ ↑ ↑ ↑    News     ↑ ↑ ↑ ↑ ↑    ====================================== */}
+      </div>
     </>
   );
 }
