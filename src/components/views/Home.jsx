@@ -134,7 +134,7 @@ function Home() {
         {/* =====================================     ↑ ↑ ↑ ↑ ↑    Hero     ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
-
+{/* 
         <section className="mt-5 ">
           <div className="newreleasesText mt-5">
             <p className="parrafoInicial ourProducts ">
@@ -198,14 +198,9 @@ function Home() {
               </Swiper>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* =====================================     ↑ ↑ ↑ ↑ ↑    New Releases       ↑ ↑ ↑ ↑ ↑    ====================================== */}
-
-        {/* <div className="container mt-5">
-          <hr />
-        </div> */}
-
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
         <section className=" sectionEchoes">
@@ -232,7 +227,7 @@ function Home() {
 
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-        <section id="shop-by-category" className="mt-5 mb-5 ">
+        {/* <section id="shop-by-category" className="mt-5 mb-5 ">
           <h2
             className={` text-center space-letter newReleasesH2 transparent margenesH2  `}
             ref={titleRefs[2]}
@@ -299,14 +294,9 @@ function Home() {
               ))}
             </Swiper>
           </div>
-        </section>
+        </section> */}
 
         {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
-
-        {/* <div className="container mt-5">
-          <hr />
-        </div> */}
-
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
         <section>
@@ -350,9 +340,6 @@ function Home() {
               </div>
             </div>
           </div>
-          {/* <div className="container mt-5 mb-5">
-            <hr />
-          </div> */}
         </section>
 
         {/* =====================================     ↑ ↑ ↑ ↑ ↑   relleno        ↑ ↑ ↑ ↑ ↑    ====================================== */}
