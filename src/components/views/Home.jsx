@@ -232,7 +232,7 @@ function Home() {
 
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-        {/* <section id="shop-by-category" className="mt-5 mb-5 ">
+        <section id="shop-by-category" className="mt-5 mb-5 ">
           <h2
             className={` text-center space-letter newReleasesH2  `}
             ref={titleRefs[2]}
@@ -256,7 +256,7 @@ function Home() {
               effect={"coverflow"}
               grabCursor={true}
               centeredSlides={false}
-              loop={true}
+              loop={false}
               speed={1000}
               coverflowEffect={{
                 rotate: 0,
@@ -299,7 +299,7 @@ function Home() {
               ))}
             </Swiper>
           </div>
-        </section> */}
+        </section>
 
         {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
 
