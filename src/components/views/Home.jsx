@@ -227,7 +227,7 @@ function Home() {
 
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    Shop by Category     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-        {/* <section id="shop-by-category" className="mt-5 mb-5 ">
+        <section id="shop-by-category" className="mt-5 mb-5 ">
           <h2
             className={` text-center space-letter newReleasesH2 transparent margenesH2  `}
             ref={titleRefs[2]}
@@ -294,7 +294,7 @@ function Home() {
               ))}
             </Swiper>
           </div>
-        </section> */}
+        </section>
 
         {/* =====================================     ↑ ↑ ↑ ↑ ↑    Shop by Category     ↑ ↑ ↑ ↑ ↑    ====================================== */}
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    The listening room     ↓ ↓ ↓ ↓ ↓    ====================================== */}
