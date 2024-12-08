@@ -20,33 +20,38 @@ function About() {
           <div className="about-text-color col-12 col-md-10 col-xl-8 p-0 pt-5 p-4">
             <h2 className="text-white fw-bold">ABOUT THIS PROJECT</h2>
             <p className="mt-2 lh-lg">
-              Equal Vision Records, an indie record label e-commerce website, is
-              the brainchild of a dedicated team of students from
+              Equal Vision Records is an indie record label{" "}
               <span className="text-white fw-bold ms-1 me-1">
-                Hack Academy Coding Bootcamp.
+                E-commerce website .{" "}
               </span>{" "}
-              Five individuals with diverse skills and knowledge collaborated to
-              create a robust project, each of them investing
+              It was created as a final project for the Hack Academy's{" "}
               <span className="text-white fw-bold ms-1 me-1">
-                over 155 hours of coding activity during three weeks.
+                full stack depeloper course
+              </span>{" "}
+              . It showcases my understanding of web development, with over 450
+              hours of coding activity dedicated to its creation. The objective:
+              to create a seamless and enjoyable{" "}
+              <span className="text-white fw-bold ms-1 me-1">
+                online shopping experience for users
               </span>
-              The objective: to create a seamless and enjoyable online shopping
-              experience for users, integrating the extensive knowledge aquired
-              during the Bootcamp.
+              , integrating the extensive knowledge aquired during the course.
             </p>
             <p className="lh-lg">
-              The <span className="text-white fw-bold">Coding Bootcamp</span> is
-              an <span className="text-white fw-bold">intensive 3-month </span>,{" "}
-              <span className="text-white fw-bold">full-time program</span>,
+              The{" "}
+              <span className="text-white fw-bold">
+                {" "}
+                full stack web developer
+              </span>{" "}
+              is an{" "}
+              <span className="text-white fw-bold">
+                intensive 4 - month{" "}
+              </span>,{" "}
+              <span className="text-white fw-bold">full - time program</span>,
               which encompasses
               <span className="text-white fw-bold"> over 600 hours </span> of
               learning covering Node.js, Express, React.js, MySQL, MongoDB, and
-              Git. This final project serves as a testament to the team's
-              ability to apply the practical aspects of the Bootcamp's
-              curriculum, demonstrating their proficiency as
-              <span className="text-white fw-bold ms-1">
-                Full Stack Developers
-              </span>
+              Git. This final project serves as a testament to the student's
+              ability to apply the practical aspects of the Course's curriculum
               .
             </p>
           </div>
@@ -55,10 +60,12 @@ function About() {
             <div className="row d-flex justify-content-between ">
               <div className="col-12 col-lg-4 mb-4 mb-lg-0">
                 <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100">
-                  <h2>Duration</h2>
+                  <h2>Technologies</h2>
                   <p className="lh-lg">
-                    The project was developed in just 3 weeks, during April
-                    2024. It was divided into one-week sprints (Scrum).
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quae dolor, reprehenderit earum provident ea eum laboriosam
+                    molestias est maiores nisi id quibusdam, reiciendis deleniti
+                    officiis placeat atque blanditiis, ex ipsa.
                   </p>
                 </div>
               </div>
@@ -66,9 +73,9 @@ function About() {
                 <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100">
                   <h2>Objective & Focus</h2>
                   <p className="lh-lg">
-                    The team aimed to ensure a seamless and enjoyable shopping
+                    The aim is to ensure a seamless and enjoyable shopping
                     experience for users, leveraging the extensive knowledge
-                    acquired during their Bootcamp training.
+                    acquired during the course training.
                   </p>
                 </div>
               </div>
