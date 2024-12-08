@@ -271,7 +271,7 @@ function Home() {
             >
               {categories.map((category) => (
                 <SwiperSlide
-                  className=" my-4 very-small-hover newReleases catCards2 "
+                  className=" my-4 very-small-hover newReleases catCards2 mb-5 "
                   key={category.id}
                 >
                   <div className=" very-small-hover catCards3   ">
