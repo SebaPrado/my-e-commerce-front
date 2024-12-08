@@ -140,11 +140,9 @@ function Home() {
               story "
             </p>
           </div>
-          <div className="  swiperSlide" ref={projectRef}>
+          <div className="   swiperSlide" ref={projectRef}>
             <h2
-              className={`text-center space-letter newReleasesH2  ${
-                isVisible[1] ? "slide-left" : ""
-              }`}
+              className={`text-center space-letter newReleasesH2 transparent  `}
               ref={titleRefs[1]}
             >
               New Releases
@@ -234,7 +232,7 @@ function Home() {
 
         <section id="shop-by-category" className="mt-5 mb-5 ">
           <h2
-            className={` text-center space-letter newReleasesH2  `}
+            className={` text-center space-letter newReleasesH2 transparent  `}
             ref={titleRefs[2]}
           >
             Shop by Category
@@ -311,7 +309,7 @@ function Home() {
 
         <section>
           <h2
-            className={`  text-center space-letter roomH2  `}
+            className={`  text-center space-letter roomH2  transparent `}
             ref={titleRefs[3]}
           >
             The Listening Room
@@ -340,19 +338,19 @@ function Home() {
               <div className="roomContainer ">
                 <div
                   className="roomContainer1"
-                  style={{ transform: `translateX(-${offset + 10}px)` }}
+                  style={{ transform: `translateX(-${offset + 6}px)` }}
                 ></div>
                 <div className="roomContainer2"></div>
                 <div
                   className="roomContainer3"
-                  style={{ transform: `translateX(${offset + 20}px)` }}
+                  style={{ transform: `translateX(${offset + 10}px)` }}
                 ></div>
               </div>
             </div>
           </div>
-          <div className="container mt-5">
+          {/* <div className="container mt-5 mb-5">
             <hr />
-          </div>
+          </div> */}
         </section>
 
         {/* =====================================     ↑ ↑ ↑ ↑ ↑   relleno        ↑ ↑ ↑ ↑ ↑    ====================================== */}
@@ -360,7 +358,7 @@ function Home() {
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    News     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
         <section id="news" className="mt-5 mb-5">
-          <h2 className="text-center space-letter mb-3">News</h2>
+          <h2 className="text-center space-letter mb-3 transparent">News</h2>
           <div className="container">
             <div className="row justify-content-center mt-4 g-4 ">
               <div className="col-md-6 col-lg-4  " onClick={handleToast}>
