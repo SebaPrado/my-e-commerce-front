@@ -786,11 +786,11 @@
     max-width: 57%;
     /* border: yellow 2px solid; */
   }
-  .shopbycategoryDiv img{
+  .shopbycategoryDiv img {
     max-width: 95%;
     /* border: yellowgreen 2px solid; */
   }
-  .productContainer{
+  .productContainer {
     box-shadow: none !important;
   }
 }
@@ -819,14 +819,10 @@
   }
 
   .catCards3 img {
-    /* border: red 2px solid; */
     max-height: 340px !important;
     width: 225px;
+    /* border: red 2px solid; */
   }
-
-  /* .catCards1 {
-        border: orange 2px dotted;
-      } */
 }
 
 @media (width <768px) {
