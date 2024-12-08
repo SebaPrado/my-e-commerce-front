@@ -45,6 +45,8 @@ function Home() {
     getCategories();
   }, []);
 
+  console.log(productList);
+
   const handleToast = () => {
     notify("This feature is not within the scope of the project.");
   };

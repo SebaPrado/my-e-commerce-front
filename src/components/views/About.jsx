@@ -151,7 +151,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="snap-section last-snap-item d-flex justify-content-center align-items-center about-lg-padding pb-5">
+      {/* <div className="snap-section last-snap-item d-flex justify-content-center align-items-center about-lg-padding pb-5">
         <div className=" mx-5 text-center our-team-section">
           <h2 className=" mb-3 fw-bold team-members-title text-white">
             OUR TEAM
@@ -279,7 +279,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
