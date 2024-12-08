@@ -151,7 +151,7 @@ function Home() {
             </h2>
           </div>
           <div className="sliderFatherContainer">
-            <div className=" py-3 newReleasesDiv  ">
+            <div className=" py-3 newReleasesDiv shopbycategoryDiv  ">
               <Swiper
                 breakpoints={{
                   0: {
@@ -183,7 +183,7 @@ function Home() {
                 }}
                 pagination={{ clickable: true }}
                 modules={[EffectCoverflow, Pagination, Autoplay]}
-                className=" pb-5 borde px-1 mx-1 "
+                className=" pb-5 borde px-1 mx-1 seb"
               >
                 {productList
                   .filter((product) => product.featured === true)

@@ -28,8 +28,6 @@
   flex: 1;
 }
 
-
-
 .snap-mid-section {
   text-align: center;
   scroll-snap-align: start;
@@ -776,6 +774,27 @@
   -webkit-backdrop-filter: blur(4px);
 }
 
+@media (width>769px) {
+  .shopbycategoryDiv {
+    max-width: 85%;
+    /* border: green 2px solid; */
+  }
+}
+
+@media (max-width: 768px) {
+  .shopbycategoryDiv {
+    max-width: 57%;
+    /* border: yellow 2px solid; */
+  }
+  .shopbycategoryDiv img{
+    max-width: 95%;
+    /* border: yellowgreen 2px solid; */
+  }
+  .productContainer{
+    box-shadow: none !important;
+  }
+}
+
 /* ====================            responsividad   categories slider   \/  ============== */
 
 .newReleasesDiv {
@@ -785,7 +804,7 @@
   /* border: pink 2px solid; */
 }
 
-.sliderFatherContainer{
+.sliderFatherContainer {
   display: flex;
   justify-content: center;
 }
@@ -802,7 +821,7 @@
   .catCards3 img {
     /* border: red 2px solid; */
     max-height: 340px !important;
-    width: 230px;
+    width: 225px;
   }
 
   /* .catCards1 {
@@ -811,9 +830,6 @@
 }
 
 @media (width <768px) {
-  /* .catCards1 {
-    border: orange 2px dotted;
-  } */
   .catCards2 {
     display: flex;
     justify-content: center;
@@ -824,9 +840,6 @@
     padding-inline: 1rem;
     width: 100% !important;
   }
-  /* .catCards3 img {
-    border: red 2px dotted;
-  } */
 }
 
 /* @media (width < 575px) {
@@ -841,7 +854,6 @@
   }
 } */
 
-
 .card-categories {
   width: 18rem;
 }
@@ -855,7 +867,7 @@
 .card-body {
   background-color: rgb(255, 255, 255);
   padding-block: 12px;
-  border: green 1px solid;
+  /* border: green 1px solid; */
 }
 
 @media (max-width: 991px) {
@@ -867,11 +879,13 @@
 }
 @media (max-width: 576px) {
   .card-img-top {
+    box-shadow: none;
     object-fit: cover;
     width: 100%;
     height: 18rem;
   }
 }
+
 /* ====================            responsividad   categories slider   /\  ============== */
 
 @media (max-width: 575px) {
@@ -902,11 +916,10 @@
 }
 
 @media (width > 468px) {
-  .singleProductContainer{
+  .singleProductContainer {
     max-width: 70%;
     /* background-color: green; */
   }
-  
 }
 
 .product {
@@ -1580,9 +1593,7 @@
   transition: 1s;
 } */
 
-
 /* ================================================================= */
-
 
 /* =================================================================== */
 
@@ -1917,7 +1928,7 @@
 
 /* ========================      \/          The listening room       \/       ==============  */
 
-.roomFatherContainer{
+.roomFatherContainer {
   margin-inline: 25px;
 }
 
@@ -2031,7 +2042,6 @@
     /* border: yellow 4px dotted; */
     width: 90%;
     height: 700px;
-
   }
 }
 
