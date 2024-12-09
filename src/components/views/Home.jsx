@@ -373,7 +373,7 @@ function Home() {
                   </div>
                   <div className="d-flex flex-column align-items-center mt-3">
                     <span className="fw-lighter text-center date-font-size text-uppercase">
-                      Nov 07, 2024
+                      Nov 07, 2024.
                     </span>
                     <p className=" fw-bold text-black text-center mt-3">
                       The vintage cassette returns: nostalgia in every rewind
