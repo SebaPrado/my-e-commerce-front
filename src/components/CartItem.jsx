@@ -36,11 +36,11 @@ function CartItem({ cartItem }) {
       <div className="singleItemInCart py-1 ">
         <div className="box1-CartItem py-2 my-1 mx-2   ">
           <div className="box-img-info ms-2  ">
-            <img
+            {/* <img
               className="cartImage"
               src={`${import.meta.env.VITE_IMG_URL}/products/${cartItem.image}`}
               alt=""
-            />
+            /> */}
           </div>
           <div className="box-info ">
             <div className="box2-1-cartItem fw-bold  ">

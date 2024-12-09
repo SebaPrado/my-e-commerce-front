@@ -48,13 +48,13 @@ function ProductView() {
       <div className="container singleProductContainer ">
         <div className="row  Single-prod single-prod-sm ">
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <img
+            {/* <img
               className="image2 image2-sm "
               src={`${import.meta.env.VITE_IMG_URL}/products/${
                 singleProduct.image
               }`}
               alt=""
-            />
+            /> */}
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6 Single-l Single-xl margenCol Single-prod-col-2 Single-xxl">
             <div className="sm-single-prod">
