@@ -275,13 +275,13 @@ function Home() {
                       className="text-decoration-none"
                     >
                       <div className="  ">
-                        {/* <img
+                        <img
                           src={`${import.meta.env.VITE_IMG_URL}/categories/${
                             category.image
                           }`}
                           className="card-img-top "
                           alt=" hola"
-                        /> */}
+                        />
                         <div className="card-body text-center fw-bold text-black ">
                           <span className="text-uppercase">
                             {category.name}

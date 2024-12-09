@@ -9,12 +9,12 @@ function Product({ product }, featured) {
           to={`/products/${product.id}`}
           className="text-decoration-none text-secondary "
         >
-          {/* <img
+          <img
             className={
               featured ? "product-featured-image" : "product-regular-image"
             }
             src={`${import.meta.env.VITE_IMG_URL}/products/${product.image}`}
-          /> */}
+          />
           <div className="d-flex flex-column align-items-center text-start product-info-div mx-2 mb-2 ">
             <span className="fw-lighter text-uppercase product-artist-name">
               {product.artist.name}
