@@ -15,10 +15,10 @@ import { SiMysql, SiRedux, SiInsomnia } from "react-icons/si";
 function About() {
   return (
     <div className=" about-text-color">
-      <div className="snap-section d-flex justify-content-start align-items-start about-lg-padding pb-5 ">
+      <div className=" d-flex justify-content-start align-items-start about-lg-padding pb-5 ">
         <div className="container row p-0 m-0 mx-auto">
-          <div className="about-text-color col-12 col-md-10 col-xl-8 p-0 pt-5 p-4">
-            <h2 className="text-white fw-bold">ABOUT THIS PROJECT</h2>
+          <div className="about-text-color ab1 col-12 col-md-10 col-xl-8 p-0 pt-5 p-4">
+            <h2 className="text-white fw-bold mb-4">ABOUT THIS PROJECT</h2>
             <p className="mt-2 lh-lg">
               Equal Vision is an indie record label{" "}
               <span className="text-white fw-bold ms-1 me-1">
@@ -26,15 +26,16 @@ function About() {
               </span>{" "}
               It was created as a final project for the Hack Academy's{" "}
               <span className="text-white fw-bold ms-1 me-1">
-                Full stack depeloper course
+                Full stack depeloper course ( an intensive 4 - month , Full -
+                time program)
               </span>{" "}
-              . It showcases my understanding of web development, with over 300
+              . It showcases my understanding of web development, with over 250
               hours of coding activity dedicated to its creation. The objective:
               to create a seamless and enjoyable{" "}
               <span className="text-white fw-bold ms-1 me-1">E-commerce</span>,
               integrating the extensive knowledge aquired during the course.
             </p>
-            <p className="lh-lg">
+            {/* <p className="lh-lg">
               The{" "}
               <span className="text-white fw-bold">
                 {" "}
@@ -51,7 +52,7 @@ function About() {
               Git. This final project serves as a testament to the student's
               ability to apply the practical aspects of the Course's curriculum
               .
-            </p>
+            </p> */}
           </div>
           <div className="col-6"></div>
           <div className="col-12">
@@ -105,7 +106,7 @@ function About() {
                 <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100 letterspacing">
                   <h2>How I Built the Frontend</h2>
                   <p className="lh-lg mt-4">
-                    I developed the user interface using{" "}
+                    I created the user interface using{" "}
                     <span className="text-white fw-bold">React.js</span>,
                     implementing{" "}
                     <span className="text-white fw-bold">
@@ -115,34 +116,64 @@ function About() {
                     <span className="text-white fw-bold">React Router</span> to
                     create a smooth navigation experience.
                   </p>
+                  <p>
+                    {" "}
+                    I developed
+                    <span className="text-white fw-bold">
+                      {" "}
+                      API integrations
+                    </span>{" "}
+                    through <span className="text-white fw-bold">Axios</span> to
+                    handle all backend communications and data fetching
+                    operations.
+                  </p>
                   <p className="lh-lg mt-4">
                     For state management, I implemented{" "}
                     <span className="text-white fw-bold">Redux</span> to handle
                     global application state, along with{" "}
                     <span className="text-white fw-bold">React Hooks</span> for
-                    local states. This helped manage shopping cart
-                    functionality and user authentication status efficiently.
+                    local states. This helped manage shopping cart functionality
+                    and user authentication status.
                   </p>
-                  <p className="lh-lg mt-4">
+                  {/* <p className="lh-lg mt-4">
                     I enhanced the{" "}
                     <span className="text-white fw-bold">
                       responsive design
                     </span>{" "}
-                    using custom CSS, while implementing{" "}
-                    <span className="text-white fw-bold">API integration</span>{" "}
-                    through <span className="text-white fw-bold">Axios</span> to
-                    handle all backend communications and data fetching
-                    operations.
-                  </p>
+                    using custom CSS and while implementing{" "}
+                  </p> */}
                 </div>
               </div>
               <div className="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100">
-                  <h2>Database , Deployment and other</h2>
-                  <p className="lh-lg">
-                    During the project, task organization was efficiently
-                    managed through the use of Trello, a versatile project
-                    management tool.
+                <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100 letterspacing">
+                  <h2>Database, Deployment, and Other</h2>
+                  <p className="lh-lg mt-4">
+                    I implemented{" "}
+                    <span className="text-white fw-bold">Sequelize</span> as an
+                    ORM to interact between the backend and the{" "}
+                    <span className="text-white fw-bold">
+                      relational database , MySQL
+                    </span>
+                    , managed using{" "}
+                    <span className="text-white fw-bold">TablePlus</span>. The
+                    database models and relationships were efficiently handled
+                    through{" "}
+                    <span className="text-white fw-bold">Sequelize </span>.
+                  </p>
+                  <p className="lh-lg mt-4">
+                    For deployment, I utilized{" "}
+                    <span className="text-white fw-bold">Vercel</span> to host
+                    all three parts of the project: the frontend, dashboard, and
+                    backend. Due to Vercel's MySQL limitations, I migrated the
+                    database to{" "}
+                    <span className="text-white fw-bold">PostgreSQL</span> for
+                    production deployment. Until now, I use Mysql for dev and
+                    Postgre for production
+                  </p>
+                  <p className="lh-lg mt-4">
+                    Given the medium scale of the project, I implemented{" "}
+                    <span className="text-white fw-bold">Formidable</span> for
+                    efficient image processing and storage.
                   </p>
                 </div>
               </div>
@@ -153,10 +184,10 @@ function About() {
       <div className="snap-section d-flex justify-content-center align-items-center about-lg-padding pb-5">
         <div className="techAndTools mx-auto">
           <div className=" text-center">
-            <h2 className="fw-bold text-white">TECHNOLOGIES & TOOLS</h2>
-            <p>This website was built using these technologies and tools:</p>
+            <h2 className="fw-bold text-white mb-5">TECHNOLOGIES & TOOLS</h2>
+            {/* <p>This website was built using these technologies and tools:</p> */}
           </div>
-          <div className="row d-flex justify-content-around align-content-around glass mx-2">
+          <div className="row d-flex justify-content-around align-content-around glass mx-4 py-4">
             <div className="col-4 col-md-3 mt-3 my-2 d-flex flex-column align-items-center text-center div-icon">
               <FaHtml5 className="icons html" size="2rem" />
               <h5 className="mt-2">HTML</h5>
@@ -208,30 +239,48 @@ function About() {
           </div>
         </div>
       </div>
-      {/* <div className="snap-section last-snap-item d-flex justify-content-center align-items-center about-lg-padding pb-5">
-        <div className=" mx-5 text-center our-team-section">
-          <h2 className=" mb-3 fw-bold team-members-title text-white">
-            OUR TEAM
+
+      <div className="snap-section last-snap-item d-flex justify-content-center align-items-center about-lg-padding pb-5">
+        <div className=" mx-5 text-center our-team-section letterspacing px-5">
+          <h2 className=" mb-5 fw-bold team-members-title text-white ">
+            WHO AM I... ?
           </h2>
-          <p>
-            This project was developed through the collaboration and dedication
-            of a team of committed professionals. Below, we introduce the team
-            behind this project:
+          <p className=" fs-5 mb-5">
+            Big question.. Instead of giving structured information ( will keep
+            that for the database tables..), I'll just write what I ve lately
+            learned from life... life that has kicked my ass in the last 16
+            months, what I apreciate ( now that it's over !  ) .. It taught me, among other many lessons, 
+            that fear of taking risks is the greatest enemy of a great life. And
+           thinking about it, fear shows up on a daily basis..{" "}
+          </p>
+          <p className=" fs-5 mb-5">
+            Knowing the greatest risk (no taking action), I decided to take the plunge,
+            leave my not bad (at all) former profession as an Agricultural engineer
+            behind, and venture into the world of Development... who knows, in
+            the future I might develop something for the Agriculture sector..
+            Anyway, this is the beginning of a new stage, and with the two key
+            ingredients, immense effort and resilience, I will definetively make
+            it happen. What lies ahead is amazing..{" "}
+          </p>{" "}
+          <p className=" fs-5 mb-5">
+            Contact me to discuss projects and ideas, commitment-free . If you
+            made it this far (and you're not a dev friend reviewing my work),
+            thank you for your time, no matter what happens from here on out!
           </p>
           <div className="team-members">
-            <div className="d-flex justify-content-around row ">
+            <div className="d-flex justify-content-around ">
               <div className="d-flex flex-column justify-content-between member text-center p-3 m-3 ">
-                <div>
-                  <img
-                    src="/img/sebastian-prado.webp"
-                    alt=""
-                    className="img-members"
-                  />
-                  <h3>Sebastian Prado</h3>
-                  <p>Full Stack Web Developer</p>
-                </div>
-                <div>
-                  <a
+                <a
+                  className="email-link "
+                  href="mailto:sebastian.pradomelesi@gmail.com"
+                >
+                  <div>
+                    <img src="/img/seb.png" alt="" className="img-members" />
+                    <h3>Sebastian Prado</h3>
+                    <p>Click here to talk ! </p>
+                  </div>
+                  <div>
+                    {/* <a
                     className="links"
                     href="https://www.linkedin.com/in/sebastian-prado-b05862281/"
                   >
@@ -239,104 +288,14 @@ function About() {
                   </a>
                   <a className="links" href="https://github.com/SebaPrado">
                     <FaGithub size="1.5rem" className="m-1" />
-                  </a>
-                </div>
-              </div>
-              <div className="d-flex flex-column justify-content-between  member text-center p-3 m-3">
-                <div>
-                  <img
-                    src="/img/pablo-abreu.webp"
-                    alt=""
-                    className="img-members"
-                  />
-                  <h3>Pablo Abreu</h3>
-                  <p>Full Stack Web Developer</p>
-                </div>
-                <div>
-                  <a
-                    className="links"
-                    href="https://www.linkedin.com/in/pablo-abreu-321650231/"
-                  >
-                    <FaLinkedin size="1.5rem" className="m-1" />
-                  </a>
-                  <a
-                    className="links"
-                    href="https://github.com/PabloAbreuMinasian"
-                  >
-                    <FaGithub size="1.5rem" className="m-1" />
-                  </a>
-                </div>
-              </div>
-              <div className="d-flex flex-column justify-content-between  member text-center p-3 m-3">
-                <div>
-                  <img
-                    src="/img/ignacio-gonzalez-muniz.webp"
-                    alt=""
-                    className="img-members"
-                  />
-                  <h3>Ignacio González Muniz</h3>
-                  <p>Full Stack Web Developer</p>
-                </div>
-                <div>
-                  <a
-                    className="links"
-                    href="https://www.linkedin.com/in/migonzalezmuniz/"
-                  >
-                    <FaLinkedin size="1.5rem" className="m-1" />
-                  </a>
-                  <a className="links" href="https://github.com/hopnux">
-                    <FaGithub size="1.5rem" className="m-1" />
-                  </a>
-                </div>
-              </div>
-              <div className="d-flex flex-column justify-content-between  member text-center p-3 m-3">
-                <div>
-                  <img
-                    src="/img/emiliano-baston.webp"
-                    alt=""
-                    className="img-members"
-                  />
-                  <h3>Emiliano Baston</h3>
-                  <p>Full Stack Web Developer</p>
-                </div>
-                <div>
-                  <a
-                    className="links"
-                    href="https://www.linkedin.com/in/emiliano-baston/"
-                  >
-                    <FaLinkedin size="1.5rem" className="m-1" />
-                  </a>
-                  <a className="links" href="https://github.com/EmiBaston">
-                    <FaGithub size="1.5rem" className="m-1" />
-                  </a>
-                </div>
-              </div>
-              <div className="d-flex flex-column justify-content-between  member text-center p-3 m-3">
-                <div>
-                  <img
-                    src="/img/diego-munoz.webp"
-                    alt=""
-                    className="img-members"
-                  />
-                  <h3>Diego Muñoz</h3>
-                  <p>Full Stack Web Developer</p>
-                </div>
-                <div>
-                  <a
-                    className="links"
-                    href="https://www.linkedin.com/in/diego-mu%C3%B1oz-hughes-b83764219/"
-                  >
-                    <FaLinkedin size="1.5rem" className="m-1" />
-                  </a>
-                  <a className="links" href="https://github.com/diegoMunozH">
-                    <FaGithub size="1.5rem" className="m-1" />
-                  </a>
-                </div>
+                  </a> */}
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
