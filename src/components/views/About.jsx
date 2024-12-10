@@ -20,21 +20,19 @@ function About() {
           <div className="about-text-color col-12 col-md-10 col-xl-8 p-0 pt-5 p-4">
             <h2 className="text-white fw-bold">ABOUT THIS PROJECT</h2>
             <p className="mt-2 lh-lg">
-              Equal Vision Records is an indie record label{" "}
+              Equal Vision is an indie record label{" "}
               <span className="text-white fw-bold ms-1 me-1">
                 E-commerce website .{" "}
               </span>{" "}
               It was created as a final project for the Hack Academy's{" "}
               <span className="text-white fw-bold ms-1 me-1">
-                full stack depeloper course
+                Full stack depeloper course
               </span>{" "}
-              . It showcases my understanding of web development, with over 450
+              . It showcases my understanding of web development, with over 300
               hours of coding activity dedicated to its creation. The objective:
               to create a seamless and enjoyable{" "}
-              <span className="text-white fw-bold ms-1 me-1">
-                online shopping experience for users
-              </span>
-              , integrating the extensive knowledge aquired during the course.
+              <span className="text-white fw-bold ms-1 me-1">E-commerce</span>,
+              integrating the extensive knowledge aquired during the course.
             </p>
             <p className="lh-lg">
               The{" "}
@@ -46,9 +44,9 @@ function About() {
               <span className="text-white fw-bold">
                 intensive 4 - month{" "}
               </span>,{" "}
-              <span className="text-white fw-bold">full - time program</span>,
+              <span className="text-white fw-bold">Full - time program</span>,
               which encompasses
-              <span className="text-white fw-bold"> over 600 hours </span> of
+              <span className="text-white fw-bold"> over 700 hours </span> of
               learning covering Node.js, Express, React.js, MySQL, MongoDB, and
               Git. This final project serves as a testament to the student's
               ability to apply the practical aspects of the Course's curriculum
@@ -59,29 +57,88 @@ function About() {
           <div className="col-12">
             <div className="row d-flex justify-content-between ">
               <div className="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100">
-                  <h2>Technologies</h2>
-                  <p className="lh-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quae dolor, reprehenderit earum provident ea eum laboriosam
-                    molestias est maiores nisi id quibusdam, reiciendis deleniti
-                    officiis placeat atque blanditiis, ex ipsa.
+                <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100 letterspacing">
+                  <h2>How I Developed the Backend</h2>
+                  <p className="lh-lg mt-4 ">
+                    I built the backend infrastructure using{" "}
+                    <span className="text-white fw-bold">Node.js</span> and{" "}
+                    <span className="text-white fw-bold">Express</span>{" "}
+                    framework, where I implemented{" "}
+                    <span className="text-white fw-bold">RESTful APIs</span>{" "}
+                    with{" "}
+                    <span className="text-white fw-bold">
+                      asynchronous functions
+                    </span>{" "}
+                    for data handling.
+                  </p>
+                  <p className="lh-lg mt-4 ">
+                    I integrated{" "}
+                    <span className="text-white fw-bold">
+                      middleware authentication
+                    </span>{" "}
+                    and{" "}
+                    <span className="text-white fw-bold">
+                      route controllers
+                    </span>{" "}
+                    for secure database operations and to manage client's
+                    requests .
+                  </p>
+                  <p className="lh-lg mt-4">
+                    Following the{" "}
+                    <span className="text-white fw-bold">
+                      MVC architecture pattern
+                    </span>
+                    , I organized the code with separate{" "}
+                    <span className="text-white fw-bold">Models</span> for data
+                    structure,{" "}
+                    <span className="text-white fw-bold">Controllers</span> for
+                    business logic. With the help of{" "}
+                    <span className="text-white fw-bold">Insomnia</span> I
+                    implemented the 4{" "}
+                    <span className="text-white fw-bold">CRUD operations</span>{" "}
+                    (Post, Get, Update, Delete) to handle all database
+                    interactions.
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-lg-4 mb-4 mb-lg-0">
+                <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100 letterspacing">
+                  <h2>How I Built the Frontend</h2>
+                  <p className="lh-lg mt-4">
+                    I developed the user interface using{" "}
+                    <span className="text-white fw-bold">React.js</span>,
+                    implementing{" "}
+                    <span className="text-white fw-bold">
+                      component-based architecture
+                    </span>{" "}
+                    for better code reusability. I used{" "}
+                    <span className="text-white fw-bold">React Router</span> to
+                    create a smooth navigation experience.
+                  </p>
+                  <p className="lh-lg mt-4">
+                    For state management, I implemented{" "}
+                    <span className="text-white fw-bold">Redux</span> to handle
+                    global application state, along with{" "}
+                    <span className="text-white fw-bold">React Hooks</span> for
+                    local states. This helped manage shopping cart
+                    functionality and user authentication status efficiently.
+                  </p>
+                  <p className="lh-lg mt-4">
+                    I enhanced the{" "}
+                    <span className="text-white fw-bold">
+                      responsive design
+                    </span>{" "}
+                    using custom CSS, while implementing{" "}
+                    <span className="text-white fw-bold">API integration</span>{" "}
+                    through <span className="text-white fw-bold">Axios</span> to
+                    handle all backend communications and data fetching
+                    operations.
                   </p>
                 </div>
               </div>
               <div className="col-12 col-lg-4 mb-4 mb-lg-0">
                 <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100">
-                  <h2>Objective & Focus</h2>
-                  <p className="lh-lg">
-                    The aim is to ensure a seamless and enjoyable shopping
-                    experience for users, leveraging the extensive knowledge
-                    acquired during the course training.
-                  </p>
-                </div>
-              </div>
-              <div className="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div className="mx-1 bg-black p-3 p-lg-4 about-cards h-100">
-                  <h2>Task Division</h2>
+                  <h2>Database , Deployment and other</h2>
                   <p className="lh-lg">
                     During the project, task organization was efficiently
                     managed through the use of Trello, a versatile project
