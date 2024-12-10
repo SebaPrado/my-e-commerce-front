@@ -108,9 +108,9 @@ function Home() {
   return (
     <>
       <div className="masterDiv">
-        {/* <Link to="about">
+        <Link to="about">
           <button className="button-to-about">ABOUT THIS PROJECT</button>
-        </Link> */}
+        </Link>
 
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    Hero     ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
@@ -135,7 +135,7 @@ function Home() {
 
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    New Releases      ↓ ↓ ↓ ↓ ↓    ====================================== */}
 
-        {/* <section className="mt-5 ">
+        <section className="mt-5 ">
           <div className="newreleasesText mt-5">
             <p className="parrafoInicial ourProducts ">
               " Unearth the echoes of timeless melodies, where each note tells a
@@ -198,7 +198,7 @@ function Home() {
               </Swiper>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* =====================================     ↑ ↑ ↑ ↑ ↑    New Releases       ↑ ↑ ↑ ↑ ↑    ====================================== */}
         {/* =====================================     ↓ ↓ ↓ ↓ ↓    Echoes Through Time     ↓ ↓ ↓ ↓ ↓    ====================================== */}
