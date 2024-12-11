@@ -92,7 +92,7 @@ const ShopNavbar = () => {
                 Products
               </Link>
               <a
-                href="https://equalvision-admin.vercel.app"
+                href="https://equalvisiondashboard.vercel.app/"
                 target="_blank"
                 className=" nav-items nav-about  "
               >
