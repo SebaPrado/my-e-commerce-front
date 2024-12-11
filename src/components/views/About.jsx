@@ -116,7 +116,7 @@ function About() {
                     <span className="text-white fw-bold">React Router</span> to
                     create a smooth navigation experience.
                   </p>
-                  <p>
+                  <p className="lh-lg mt-4">
                     {" "}
                     I developed
                     <span className="text-white fw-bold">
